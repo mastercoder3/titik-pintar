@@ -1,0 +1,204 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size=2>
+        <img class="bulp-img" src="assets/imgs/bulp.png">
+      </ion-col>
+      <ion-col size=2>
+        <img class="dollar-img" src="assets/imgs/dollar.png">
+      </ion-col>
+      <ion-col size=2>
+        <div class="dollar-count-div">
+            <h1 class="h1">1000</h1>
+        </div>
+      </ion-col>
+
+      <ion-col size=2>
+        <img class="dollar-img" src="assets/imgs/star.png">
+      </ion-col>
+      <ion-col size=2>
+        <div class="dollar-count-div">
+            <h1 class="h1">30</h1>
+        </div>
+      </ion-col>
+      <ion-col size=2>
+        <img class="bulp-img" src="assets/imgs/a.png" (click)="ClicktoProfilepage()">
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="myview">
+  <ion-row>
+  <h1 class="h1-2">RECENTLY PLAYED</h1>
+  <img class="avatar" src="assets/imgs/Avatar_Oldman.png">
+</ion-row>
+
+<ion-row>
+  <ion-col size=5>
+  <div class="lets-count-outer-div">
+      <div class="lets-count-inner-div">
+        <ion-row>
+          <ion-col size=5>
+          <img class="box-img" src="assets/imgs/box.png">
+        </ion-col>
+        <ion-col size=2>
+        </ion-col>
+        <ion-col size=5>
+          <p>LEVEL : 8</p>
+          <img class="loader-img" src="assets/imgs/loading-bar.png">
+        </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size=1></ion-col>
+          <ion-col size=10>
+            <img class="lets-count-img" src="assets/imgs/lets-count.png">
+          </ion-col>
+        </ion-row>
+        <ion-button class="btn">Play</ion-button>
+      </div>
+  </div>
+</ion-col>
+<ion-col size=5>
+  <div class="lets-read-outer-div">
+      <div class="lets-read-inner-div">
+          <ion-row>
+              <ion-col size=3>
+              <img class="box-img" src="assets/imgs/flag.png">
+            </ion-col>
+            <ion-col size=4>
+            </ion-col>
+            <ion-col size=5>
+              <p>LEVEL : 8</p>
+              <img class="loader-img" src="assets/imgs/loading-bar.png">
+            </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col size=1></ion-col>
+              <ion-col size=10>
+                <img class="lets-count-img" src="assets/imgs/lets-read.png">
+              </ion-col>
+            </ion-row>
+            <ion-button class="btn">Play</ion-button>
+          </div>
+        </div>
+    
+  </ion-col>
+</ion-row>
+
+<div class="President-election-div">
+    <img class="" src="assets/imgs/president-election.png">
+</div>
+
+<h1 class="h1-2">SUBJECT</h1>
+<ion-row>
+  <ion-col size=4>
+    <div class="English-div" (click)="ClicktoPlay()">
+      <img class="english-avatar" src="assets/imgs/english-avatar.png">
+      <p class="para">ENGLISH</p>
+    </div>
+  </ion-col>
+  <ion-col size=4>
+    <div class="Bahasa-div"  (click)="ClicktoPlay()">
+      <img class="bahasa-avatar" src="assets/imgs/bahasa-avatar.png">
+      <p class="para1">BAHASA</p>
+    </div>
+  </ion-col>
+  <ion-col size=4>
+    <div class="Math-div"  (click)="ClicktoPlay()">
+      <img class="english-avatar" src="assets/imgs/math-avatar.png">
+      <p class="para">MATHEMATICS</p>
+    </div>
+  </ion-col>
+</ion-row>
+<br><br>
+<ion-row>
+    <ion-col size=4>
+      <div class="English-div"  (click)="ClicktoPlay()">
+        <img class="civic-avatar" src="assets/imgs/civic-avatar.png">
+        <p class="para">CIVIC</p>
+      </div>
+    </ion-col>
+    <ion-col size=4>
+      <div class="Bahasa-div" (click)="ClicktoPlay()">
+        <img class="physics-avatar" src="assets/imgs/physics-avatar.png">
+        <p class="para">PHYSICS</p>
+      </div>
+    </ion-col>
+    <ion-col size=4>
+      <div class="Math-div" (click)="ClicktoPlay()">
+        <img class="physics-avatar" src="assets/imgs/biology-avatar.png">
+        <p class="para">BIOLOGY</p>
+      </div>
+    </ion-col>
+  </ion-row>
+  <br><br>
+  <ion-row>
+      <ion-col size=4>
+        <div class="English-div" (click)="ClicktoPlay()">
+          <img class="islamic-avatar" src="assets/imgs/islamic-avatar.png">
+          <p class="para">ISLAM</p>
+        </div>
+      </ion-col>
+      <ion-col size=4>
+        <div class="Bahasa-div" (click)="ClicktoPlay()">
+          <img class="physics-avatar" src="assets/imgs/geography-avatar.png">
+          <p class="para">GEOGRAPHY</p>
+        </div>
+      </ion-col>
+      <ion-col size=4>
+        <div class="Math-div" (click)="ClicktoPlay()">
+          <img class="music-avatar" src="assets/imgs/music-avatar.png">
+          <p class="para">MUSIC</p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <h1 class="h1-2">BATTLE</h1>
+
+    <ion-row>
+      <ion-col size=1></ion-col>
+      <ion-col size=4>
+        <div class="outer-player-ready-div">
+           <div class="inner-player-ready-div">
+                <ion-row>
+                  <p>PLAYER READY</p>
+                </ion-row>
+                <ion-row>
+                  <ion-col size=6>
+                      <img class="" src="assets/imgs/bird.png">
+                  </ion-col>
+                  <ion-col size=6>
+                    <h1>6</h1>
+                  </ion-col>
+                </ion-row>
+           </div>
+        </div>
+      </ion-col>
+      <ion-col size=4>
+          <div class="outer-player-ready-div">
+             <div class="inner-player-ready-div">
+                <ion-row>
+                    <p>COINS TO WIN</p>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col size=5>
+                        <img class="" src="assets/imgs/dollar.png">
+                    </ion-col>
+                    <ion-col size=7>
+                      <h1>12</h1>
+                    </ion-col>
+                  </ion-row>
+             </div>
+          </div>
+        </ion-col>
+    </ion-row>
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <app-footer1 style="position: fixed; bottom: 0px; width: 100%;"></app-footer1>
+
+</ion-content>
+
+<!-- <ion-footer>
+    
+  </ion-footer> -->

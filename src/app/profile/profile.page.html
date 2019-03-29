@@ -1,0 +1,132 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size=2>
+        <img class="bulp-img" src="assets/imgs/back.png">
+      </ion-col>
+      <ion-col size=2>
+        <img class="dollar-img" src="assets/imgs/dollar.png">
+      </ion-col>
+      <ion-col size=2>
+        <div class="dollar-count-div">
+            <h1 class="h1">1000</h1>
+        </div>
+      </ion-col>
+
+      <ion-col size=2>
+        <img class="dollar-img" src="assets/imgs/star.png">
+      </ion-col>
+      <ion-col size=2>
+        <div class="dollar-count-div">
+            <h1 class="h1">30</h1>
+        </div>
+      </ion-col>
+      <ion-col size=2>
+        <img class="top-profile-avatar" src="assets/imgs/top-profile-avatar.png">
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+<ion-row>
+  <ion-col size=6>
+    <img class="profile-img" src="assets/imgs/profile-avatar.png">
+    <div class="placeholder-div">
+       <p>123</p>
+    </div>
+  </ion-col>
+  <ion-col size=6>
+    <h1 class="h1-2">Rico</h1>
+    <ion-row>
+        <img class="rating-star" src="assets/imgs/rating-star1.png">
+        <img class="rating-star" src="assets/imgs/rating-star1.png">
+        <img class="rating-star" src="assets/imgs/rating-star2.png">
+        <img class="rating-star" src="assets/imgs/rating-star2.png">
+    </ion-row>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col size=4>
+    <h1 class="h1-3">Music</h1>
+  <ion-list class="selector-list">  
+    <ion-item class="selector-listt">
+      
+      <ion-select class="custom-select" value="On" okText="Okay" cancelText="Dismiss" [(ngModel)]="audioStatus"
+      (ngModelChange)="changeAudio()"
+      >
+        <ion-select-option value="on">On</ion-select-option>
+        <ion-select-option value="off">Off</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+  </ion-list>
+</ion-col>
+<ion-col size=4>
+    <h1 class="h1-3">Volume</h1>
+  <ion-list class="selector-list">  
+    <ion-item class="selector-listt">
+      
+      <ion-select class="custom-select" okText="Okay" cancelText="Dismiss" [(ngModel)]="volume" (ngModelChange)="setVolume()">
+        <ion-select-option value="10">10%</ion-select-option>
+        <ion-select-option value="20">20%</ion-select-option>
+        <ion-select-option value="30">30%</ion-select-option>
+        <ion-select-option value="40">40%</ion-select-option>
+        <ion-select-option value="50" selected>50%</ion-select-option>
+        <ion-select-option value="60">60%</ion-select-option>
+        <ion-select-option value="70">70%</ion-select-option>
+        <ion-select-option value="80">80%</ion-select-option>
+        <ion-select-option value="90">90%</ion-select-option>
+        <ion-select-option value="100">100%</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+  </ion-list>
+</ion-col>
+<ion-col size=4>
+    <h1 class="h1-3">Language</h1>
+  <ion-list class="selector-list">  
+    <ion-item class="selector-listt">
+      
+      <ion-select class="custom-select" value="English" okText="Okay" cancelText="Dismiss">
+        <ion-select-option value="English">English</ion-select-option>
+        <ion-select-option value="Bahasa">Bahasa</ion-select-option>
+        
+      </ion-select>
+    </ion-item>
+  
+  </ion-list>
+</ion-col>
+</ion-row>
+
+<h1 class="h1-4">Your Avatar</h1>
+<ion-row>
+    <ion-slides pager="true" style="z-index: 1" [options]="slideOpts">
+        <ion-slide> 
+          <ion-row>
+            <ion-col size=6>
+              <img class="avatar1-img" src="assets/imgs/profile-oldman.png">
+            </ion-col>
+            <ion-col size=5>
+                <img class="avatar3-img" src="assets/imgs/profile-oldman2.png">
+              </ion-col>
+          </ion-row>
+          
+        </ion-slide>
+        <ion-slide>
+            <ion-row>
+                <ion-col size=6>
+                  <img class="avatar1-img" src="assets/imgs/profile-oldman.png">
+                </ion-col>
+                <ion-col size=5>
+                    <img class="avatar3-img" src="assets/imgs/profile-oldman2.png">
+                  </ion-col>
+              </ion-row>
+              
+        </ion-slide>
+        </ion-slides>
+</ion-row>
+</ion-grid>
+<br><br><br><br>
+</ion-content>

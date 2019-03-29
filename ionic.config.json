@@ -1,0 +1,7 @@
+{
+  "name": "Titik_pintar",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

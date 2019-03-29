@@ -1,0 +1,138 @@
+ion-toolbar{
+    --background: #185285; 
+    height: 100% !important;
+    z-index: -1;
+}
+ion-header{
+    height: 8% !important;
+    background-color: #185285;
+}
+ion-content{
+    --background: url('../../assets/imgs/BACKGROUND.png') 0 0/100% 100% no-repeat;
+    width:102% !important;
+    background-size: cover !important;
+   background-attachment: fixed !important;
+}
+.cross-img{
+    height: 3.5vh;
+    width: 3.5vh;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+.top-div{
+    margin-left: 15px;
+    margin-top: 6px;
+    height: 4.5vh;
+    width: 17vh;
+    background-color: white;
+    border-radius: 15px;
+    border: #ffae00 3px solid;
+}
+.dollar-img{
+    height: 5vh;
+    width: 5vh;
+    margin-top: 5px;
+    margin-left: 35px;
+}
+.h1{
+    font-family: 'LooseySans';
+font-size: 4vh !important;
+color: #feeb03;
+text-align: center;
+font-weight: bolder;
+margin-top:8px;
+margin-left: 10px;
+   text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.top-flag-img{
+    height: 35%;
+    width: 120%;
+}
+.oldman-img{
+    margin-left: 20px;
+    margin-top: -30px;
+}
+.h1-2{
+    font-family: 'LooseySans';
+    font-size: 6vh !important;
+    color: #feeb03;
+    text-align: center;
+    font-weight: bolder;
+    margin-top:10px;
+    margin-left: 10px;
+       text-shadow:
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
+        position: absolute;
+        z-index: 1111;
+}
+
+.vote-img{
+    height: 35%;
+    width: 100%;
+    margin-top: -120px;
+    z-index: 10;
+}
+.end-div{
+    height: 70%;
+    width: 100%;
+    background-color: #185285;
+    margin-top: -1px;
+}
+.end-div p{
+    font-family: 'LooseySans';
+    font-size: 3vh !important;
+    color: white;
+    margin-left: 5%;
+    white-space: pre-wrap;
+}
+.speaker-img{
+    margin-left: -10px;
+    margin-top: 50px;
+    height: 50%;
+}
+.para{
+    margin-top:-10%;
+}
+.finish-img{
+    margin-top:-100px;
+    margin-left: -15px;
+}
+@media (min-width: 375px) and  (max-width: 412px){
+    .h1-2{
+        font-family: 'LooseySans';
+        font-size: 5vh !important;
+        color: #feeb03;
+        text-align: center;
+        font-weight: bolder;
+        margin-top:8px;
+        margin-left: 10px;
+           text-shadow:
+           -1px -1px 0 #000,  
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+             1px 1px 0 #000;
+}
+.speaker-img{
+    margin-left: -15px;
+    margin-top: 70px;
+    height: 40%;
+}
+}
+@media (min-width: 320px) and  (max-width: 330px){
+    .para{
+        position: relative;
+        bottom: 40px;
+    }
+    .finish-img{
+        position: relative;
+        bottom: 50px;
+        margin-left: -15px;
+    }
+}

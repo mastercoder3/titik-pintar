@@ -1,0 +1,323 @@
+ion-toolbar{
+    --background: #93E022; 
+    height: 100% !important;
+    z-index: -1;
+}
+ion-header{
+    height: 9% !important;
+    background-color: #93E022;
+}
+ion-content{
+    --background: url('../../assets/imgs/BACKGROUND.png') 0 0/100% 100% no-repeat;
+    width:102% !important;
+    background-size: cover !important;
+   background-attachment: fixed !important;
+}
+.bulp-img{
+    height: 6vh;
+    width: 6vh;
+    margin-top: 2px;
+}
+.dollar-count-div{
+    height: 4vh;
+    width: 10vh;
+    background-color: #7de7df;
+    border: #06bbca 2px solid;
+    border-radius: 5px;
+    margin-left: -5vh;
+    z-index: -1;
+    margin-top: 9px;
+}
+.dollar-img{
+    position: absolute;
+    height: 5vh;
+    width: 5vh;
+    z-index: 2;
+    margin-top: 5px;
+}
+
+.h1{
+    font-family: 'LooseySans';
+font-size: 3.2vh !important;
+color: #feeb03;
+text-align: left;
+font-weight: bolder;
+margin-top: -0.3vh;
+margin-left: 10%;
+   text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+@media (min-width: 375px) and  (max-width: 412px){
+    .h1{
+        font-family: 'LooseySans';
+    font-size: 3.5vh;
+    color: #feeb03;
+    text-align: left;
+    font-weight: bolder;
+    margin-top: -0.3vh;
+    margin-left: 20%;
+       text-shadow:
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
+    }
+}
+.h1-2{
+    font-family: 'LooseySans';
+font-size: 3.7vh;
+color: white;
+text-align: left;
+font-weight: bolder;
+margin-top: 8vh;
+margin-left: 2vh;
+}
+.avatar{
+    height: 9vh;
+    width: 9vh;
+    margin-top: 2.8vh;
+}
+.lets-count-outer-div{
+    background-color: white;
+    height: 32vh;
+    width: 100%;
+    margin-left: 2vh;
+    border-radius: 15px;
+}
+.lets-count-inner-div{
+    background-color: white;
+    height: 30vh;
+    width: 92%;
+    position: relative;
+    top: 7px;
+    left: 4%;
+    border-radius: 15px;
+    border: #77bb13 1px solid;
+}
+.lets-count-inner-div p{
+    font-size: 1.3vh;
+    color: rgba(113, 52, 8, 255);
+    font-weight: bolder;
+    font-family: 'LooseySans';
+    position: relative;
+    bottom: 1vh;
+    text-align: center;
+}
+.loader-img{
+    position: relative;
+    bottom: 2vh;
+}
+.lets-count-img{
+    height: 17vh;
+    width: 17vh;
+}
+.btn{
+    width: 80%;
+    height: 20%;
+    margin-left: 10%;
+    position: absolute;
+    --background:#b8d446;
+    border-radius: 10px;
+    border:#419656 5px solid;
+    border-top: #419656 3px solid !important;
+    color: #411e16;
+    font-weight: bolder;
+    font-family: 'LooseySans';
+    font-size: 3vh;
+}
+.lets-read-outer-div{
+    background-color: white;
+    height: 32vh;
+    width: 100%;
+    margin-left: 5vh;
+    border-radius: 15px;
+}
+.lets-read-inner-div{
+    background-color: white;
+    height: 30vh;
+    width: 92%;
+    position: relative;
+    top: 7px;
+    left: 4%;
+    border-radius: 15px;
+    border: #e62552 1px solid;
+}
+.lets-read-inner-div p{
+    font-size: 1.3vh;
+    color: rgba(113, 52, 8, 255);
+    font-weight: bolder;
+    font-family: 'LooseySans';
+    position: relative;
+    bottom: 1vh;
+    text-align: center;
+}
+@media (min-width: 320px) and  (max-width: 360px){
+    .btn{
+        width: 80%;
+        height: 20%;
+        margin-left: 10%;
+        position: relative;
+        bottom: 8px;
+        --background:#b8d446;
+        border-radius: 10px;
+        border:#419656 5px solid;
+        border-top: #419656 3px solid !important;
+        color: #411e16;
+        font-weight: bolder;
+        font-family: 'LooseySans';
+        font-size: 3vh;
+    }
+}
+
+.President-election-div{
+    height: 32%;
+    width: 100%;
+    background-color: #1eb0ab;
+    margin-top: 12%;
+    border-top: #feeb03 4px solid;
+    border-bottom: #feeb03 4px solid;
+}
+.President-election-div img{
+    height: 25vh;
+    width: 70%;
+    margin-left: 10%;
+}
+.English-div{
+    height: 17vh;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: auto;
+
+}
+.para{
+    color: white;
+    font-size: 1.6vh;
+    text-align: center;
+    font-weight: bolder;
+}
+.para1{
+    color: white;
+    font-size: 1.6vh;
+    text-align: center;
+    position: relative;
+    bottom: 6px;
+    font-weight: bolder;
+}
+.Bahasa-div{
+    height: 17vh;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Math-div{
+    height: 17vh;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: auto;
+}
+.english-avatar{
+    height: 95%;
+    width: 90%;
+    margin-left: 5%;
+}
+.bahasa-avatar{
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    bottom: 5px;
+}
+.civic-avatar{
+    height: 95%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.physics-avatar{
+    height: 90%;
+    width: 95%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.islamic-avatar{
+    height: 90%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.music-avatar{
+    height: 90%;
+    width: 88%;
+    margin-left: 6%;
+    margin-top: 5%;
+}
+
+.outer-player-ready-div{
+    height: 13vh;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 20%;
+}
+.inner-player-ready-div{
+    height: 11.2vh;
+    width: 90%;
+    background-color: #f3f0f0;
+    border-radius: 20px;
+    position: relative;
+    top: 7%;
+    margin-left: 5%;
+   
+}
+.inner-player-ready-div p{
+    font-size: 1.6vh;
+    color: #743a11;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+    font-family: 'LooseySans';
+}
+.inner-player-ready-div img{
+    margin-left: 20%;
+    position: relative;
+    bottom: 3px;
+}
+.inner-player-ready-div h1{
+    font-size: 5vh;
+    color: #743a11;
+    margin-left: 20%;
+    font-weight: bolder;
+    position: relative;
+    bottom: 25px;
+    font-family: 'LooseySans';
+}
+@media (min-width: 375px) and  (max-width: 412px){
+    .inner-player-ready-div h1{
+        font-size: 30px !important;
+        color: #743a11;
+        margin-left: 20%;
+        font-weight: bolder;
+        position: relative;
+        bottom: 25px;
+        font-family: 'LooseySans';
+    }
+}
+
+ion-footer {
+    height: 9% !important;
+    --background: #93E022;
+    z-index: -1;
+    }
+   ion-footer img{
+      position: relative;
+      bottom: 20%;
+      position: absolute;
+      z-index: 2;
+   } 
