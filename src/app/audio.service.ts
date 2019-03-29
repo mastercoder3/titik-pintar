@@ -20,11 +20,11 @@ export class AudioService {
   }
 
   off(){
-    this.nativeAudio.play('uniqueId1');
+    this.nativeAudio.stop('uniqueId1');
   }
 
   on(){
-    this.nativeAudio.stop('uniqueId1');
+    this.nativeAudio.play('uniqueId1');
   }
 
   setVolume(val){
