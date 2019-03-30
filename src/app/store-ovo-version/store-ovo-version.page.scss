@@ -1,0 +1,326 @@
+ion-toolbar{
+    --background: #543d99; 
+    height: 100% !important;
+    z-index: -1;
+}
+ion-header{
+    height: 10% !important;
+    background-color: #543d99;
+}
+ion-content{
+    --background: url('../../assets/imgs/BACKGROUND.png') 0 0/100% 100% no-repeat;
+    width:102% !important;
+    background-size: cover !important;
+   background-attachment: fixed !important;
+}
+.bulp-img{
+    height: 6vh;
+    width: 6vh;
+    margin-top: 2px;
+}
+.dollar-count-div{
+    height: 4vh;
+    width: 13vh;
+    background-color: #7de7df;
+    border: #06bbca 2px solid;
+    border-radius: 5px;
+    
+    z-index: -1;
+    margin-top: 9px;
+}
+.star-count-div{
+    height: 4vh;
+    width: 10vh;
+    background-color: #7de7df;
+    border: #06bbca 2px solid;
+    border-radius: 5px;
+    margin-left: -5vh;
+    z-index: -1;
+    margin-top: 9px;
+}
+.dollar-img{
+    position: absolute;
+    height: 5vh;
+    width: 5vh;
+    z-index: 2;
+    margin-top: 5px;
+}
+.ovo-img{
+    position: absolute;
+    height: 2vh;
+    width: 3.5vh;
+    z-index: 2;
+    margin-top: 17px;
+}
+.h6{
+    font-size: 1.3vh ;
+color: white;
+text-align: left;
+font-weight: bolder;
+margin-top: -0%;
+margin-left: -8%;
+}
+.para{
+    font-size: 1.5vh;
+    color: #ffb600;
+    text-align: left;
+    font-weight: bolder;
+    margin-top: -0%;
+    margin-left: -5%;
+}
+.h1{
+    font-family: 'LooseySans';
+font-size: 2.7vh ;
+color: #ffb600;
+text-align: left;
+font-weight: bolder;
+margin-top: 3px;
+margin-left: 10%;
+z-index: 1111;
+   text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+@media (min-width: 375px) and  (max-width: 412px){
+    .h1{
+        font-family: 'LooseySans';
+    font-size: 2.5vh;
+    color: #ffb600;
+    text-align: left;
+    font-weight: bolder;
+    margin-top: 3px;
+    z-index: 1111;
+    margin-left: 20%;
+       text-shadow:
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
+    }
+}
+.top-div{
+    height: 23%;
+    width: 100%;
+    background-color: #392575;
+    
+}
+.home-img{
+    height: 5vh;
+    width: 5vh;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.h3{
+    font-family: 'LooseySans';
+    font-size: 3.4vh;
+    color: white;
+    margin-top: -2px;
+    margin-left: 48px;
+    text-align: center;
+}
+.deals-img{
+    height: 5vh;
+    width: 5vh;
+    margin-top: 20px;  
+}
+.h3-2{
+    font-family: 'LooseySans';
+    font-size: 3.4vh;
+    color: white;
+    margin-top: -2px;
+    opacity: 0.2;
+    text-align: center;
+}
+.history-img{
+    height: 5vh;
+    width: 5vh;
+    margin-top: 22px;  
+    margin-left: -50px;
+}
+.h3-3{
+    font-family: 'LooseySans';
+    font-size: 3.4vh;
+    color: white;
+    margin-top: -2px;
+    opacity: 0.2;
+    text-align: center;
+    margin-left: -50px;
+}
+.transfer-div{
+    height: 9vh;
+    width: 25%;
+    background-color: white;
+    margin: 0%;
+    border: #392575 2px solid;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.transfer-div img{
+    height: 3.2vh;
+    width: 3.2vh;
+    margin-top: 8px;
+}
+
+.transfer-div p{
+   margin-top: -2px;
+   color: #392575;
+}
+.scan-div{
+    height: 9vh;
+    width: 25%;
+    background-color: white;
+    margin: 0%;
+    border: #392575 2px solid;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.scan-div img{
+    height: 3.2vh;
+    width: 3.2vh;
+    margin-top: 8px;
+}
+
+.scan-div p{
+   margin-top: -2px;
+   color: #392575;
+}
+.OVO-id-div{
+    height: 9vh;
+    width: 25%;
+    background-color: white;
+    margin: 0%;
+    border: #392575 2px solid;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.OVO-id-div img{
+    height: 3.2vh;
+    width: 3.2vh;
+    margin-top: 8px;
+}
+
+.OVO-id-div p{
+   margin-top: -2px;
+   color: #392575;
+}
+
+.buttonActive{
+    height: 8vh;
+    width: 110%;
+    border-radius: 15px;
+    border: #d31cc4 3px solid;
+    --background:#860f7c;
+    margin-left: 15%;
+    font-family: 'LooseySans';
+    font-size: 4vh;
+    --background-activated: #860f7c;
+}
+.buttonDeactive{
+    height: 8vh;
+    width: 110%;
+    border-radius: 15px;
+    border: #f0efef 3px solid;
+    --background:white;
+    --color: #860f7c !important;
+    margin-left: 15%;
+    font-family: 'LooseySans';
+    font-size: 4vh;
+}
+ion-slides{
+    --bullet-background: rgb(247, 8, 8) !important;
+    --bullet-background-active: white !important;
+}
+// .avatar1-div{
+//     height: 100px;
+//     width: 100px;
+//     background-color: white;
+//     border-radius: 10px;
+// }
+.avatar1-img{
+    height: 25vh;
+    width: 21vh;
+    margin-left: 20%;
+    margin-right: auto;
+}
+.avatar2-img{
+    height: 25vh;
+    width: 21vh;
+    margin-right: 10%;
+    margin-left: auto;
+}
+.avatar3-img{
+    height: 24.5vh;
+    width: 22vh;
+    margin-right: 10%;
+    margin-left: auto;
+    margin-top: 2%;
+}
+@media (min-width: 375px) and  (max-width: 411px){
+    .avatar1-img{
+        height: 25vh;
+        width: 20vh;
+        margin-left: 10%;
+        margin-right: auto;
+    }
+    .avatar2-img{
+        height: 25vh;
+        width: 20vh;
+        margin-right: 5%;
+        margin-left: auto;
+    }
+}
+
+.placeholder-div{
+    height: 12%;
+    width: 60%;
+    background-color: #000;
+    border-radius: 20px;
+    margin-left: 50px;
+    position: relative;
+    bottom: 22%;
+    opacity: 0.4;
+    
+}
+.placeholder-div p{
+    margin-left: 10px;
+    margin-top: 4px;
+    font-family: 'LooseySans';
+    font-size: 2vh;
+    color: white;
+}
+.placeholder-div h1{
+    margin-left: 5px;
+    margin-top: 4px;
+    font-family: 'LooseySans';
+    font-size: 2vh;
+    color: white;
+}
+.placeholder-div2{
+    height: 12%;
+    width: 60%;
+    background-color: #000;
+    border-radius: 20px;
+    margin-left: 32px;
+    position: relative;
+    bottom: 22%;
+    opacity: 0.4;
+    
+}
+.placeholder-div2 p{
+    margin-left: 10px;
+    margin-top: 4px;
+    font-family: 'LooseySans';
+    font-size: 2vh;
+    color: white;
+}
+.placeholder-div2 h1{
+    margin-left: 5px;
+    margin-top: 4px;
+    font-family: 'LooseySans';
+    font-size: 2vh;
+    color: white;
+}

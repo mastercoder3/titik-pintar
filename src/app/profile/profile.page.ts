@@ -8,8 +8,8 @@ import { AudioService } from '../audio.service';
 })
 export class ProfilePage implements OnInit {
 
-  audioStatus = 'on';
-  volume = '50';
+  audioStatus = '25';
+  volume = '75';
 
   constructor(private audio: AudioService) { }
 
@@ -17,16 +17,21 @@ export class ProfilePage implements OnInit {
   }
 
   changeAudio(){
-    if(this.audioStatus === 'on'){
-      this.audio.on();
+    if(this.audioStatus === 'off'){
+      this.audio.off();
     }
     else{
-      this.audio.off();
+      this.audio.setVolume(parseInt(this.audioStatus) / 100);
     }
   }
 
   setVolume(){
-    this.audio.setVolume(parseInt(this.volume) / 100);
+    if(this.audioStatus === 'off'){
+      this.audio.setReactionVolume(0);
+    }
+    else{
+      this.audio.setReactionVolume(parseInt(this.volume) / 100);
+    }
   }
 
 }

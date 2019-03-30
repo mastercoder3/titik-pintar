@@ -1,0 +1,341 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-row>
+          <ion-col size=2>
+            <img class="bulp-img" src="assets/imgs/bulp.png">
+          </ion-col>
+          <ion-col size=1>
+            <img class="ovo-img" src="assets/imgs/ovo.png">
+          </ion-col>
+          <ion-col size=3>
+            <div class="dollar-count-div">
+              <ion-row>
+                
+                <h1 class="h1">Rp 1000</h1>
+              </ion-row>
+            </div>
+            <ion-row>
+            <h6 class="h6">OVO POINTS <b style="color:#ffb600">12,000</b></h6>
+          </ion-row>
+          </ion-col>
+    
+          <ion-col size=2>
+            <img class="dollar-img" src="assets/imgs/star.png">
+          </ion-col>
+          <ion-col size=2>
+            <div class="star-count-div">
+                <h1 class="h1">30</h1>
+            </div>
+          </ion-col>
+          <ion-col size=2>
+            <img class="bulp-img" src="assets/imgs/b.png">
+          </ion-col>
+        </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="top-div">
+          <ion-row style="text-align:center">
+            <ion-col size=4>
+              <img class="home-img" src="assets/imgs/home-img.png">
+              <h3 class="h3">Home</h3>
+            </ion-col>
+            <ion-col size=4>
+              <img class="deals-img" src="assets/imgs/deals-img.png">
+              <h3 class="h3-2">Deals</h3>
+            </ion-col>
+            <ion-col size=4>
+              <img class="history-img" src="assets/imgs/history-img.png">
+              <h3 class="h3-3">History</h3>
+            </ion-col>
+          </ion-row>
+          <ion-row style="text-align:center">
+              
+                <div class="transfer-div">
+                  <img class="" src="assets/imgs/transfer-img.png">
+                  <p>Transfer</p>
+                </div>
+        
+                <div class="scan-div">
+                  <img class="" src="assets/imgs/scan-img.png">
+                  <p>Scan</p>
+                </div>
+
+                <div class="OVO-id-div">
+                  <img class="" src="assets/imgs/ovo-id-img.png">
+                  <p>OVO ID</p>
+                </div>
+      
+          </ion-row >
+      </div>
+       <br><br><br>
+      <ion-row>
+        <ion-col size=1></ion-col>
+        <ion-col size=4>
+          <ion-button class="btn" mode="ios" [class.buttonActive]="selector === 'avatars' " [class.buttonDeactive]="selector === 'others' " (click)="changeSwitchCase('avatars')">Avatars</ion-button>
+        </ion-col>
+        <ion-col size=1></ion-col>
+        <ion-col size=4>
+            <ion-button class="btn2" mode="ios" [class.buttonActive]="selector === 'others' " [class.buttonDeactive]="selector === 'avatars' " (click)="changeSwitchCase('others')">
+              Gifts
+            </ion-button>
+          </ion-col>
+      </ion-row>
+
+      <div class="container" [ngSwitch]="selector">
+        <div  *ngSwitchCase="'avatars'"  class="avatars" >
+            <ion-slides pager="true" style="z-index: 1" [options]="slideOpts">
+                <ion-slide> 
+                  <ion-row>
+                    <ion-col size=6>
+                      <img class="avatar1-img" src="assets/imgs/bag-img.png">
+                      <div class="placeholder-div">
+                        <ion-row>
+                          <h1>OVO</h1>
+                            <p>IDR 1000</p>
+                        </ion-row>
+                      </div>
+                    </ion-col>
+                    <ion-col size=6>
+                        <img class="avatar3-img" src="assets/imgs/gift-coupon.png">
+                        <div class="placeholder-div2">
+                            <ion-row>
+                              <h1>OVO</h1>
+                                <p>IDR 1000</p>
+                            </ion-row>
+                          </div>
+                      </ion-col>
+                      <ion-col size=6>
+                          <img class="avatar1-img" src="assets/imgs/notes.png">
+                          <div class="placeholder-div">
+                              <ion-row>
+                                <h1>OVO</h1>
+                                  <p>IDR 1000</p>
+                              </ion-row>
+                            </div>
+                        </ion-col>
+                        <ion-col size=6>
+                            <img class="avatar2-img" src="assets/imgs/gift-coupon.png">
+                            <div class="placeholder-div2">
+                                <ion-row>
+                                  <h1>OVO</h1>
+                                    <p>IDR 1000</p>
+                                </ion-row>
+                              </div>
+                          </ion-col>
+                  </ion-row>
+                  
+                </ion-slide>
+                <ion-slide>
+                    <ion-row>
+                        <ion-col size=6>
+                          <img class="avatar1-img" src="assets/imgs/bag-img.png">
+                          <div class="placeholder-div">
+                            <ion-row>
+                              <h1>OVO</h1>
+                                <p>IDR 1000</p>
+                            </ion-row>
+                          </div>
+                        </ion-col>
+                        <ion-col size=6>
+                            <img class="avatar3-img" src="assets/imgs/gift-coupon.png">
+                            <div class="placeholder-div2">
+                                <ion-row>
+                                  <h1>OVO</h1>
+                                    <p>IDR 1000</p>
+                                </ion-row>
+                              </div>
+                          </ion-col>
+                          <ion-col size=6>
+                              <img class="avatar1-img" src="assets/imgs/notes.png">
+                              <div class="placeholder-div">
+                                  <ion-row>
+                                    <h1>OVO</h1>
+                                      <p>IDR 1000</p>
+                                  </ion-row>
+                                </div>
+                            </ion-col>
+                            <ion-col size=6>
+                                <img class="avatar2-img" src="assets/imgs/gift-coupon.png">
+                                <div class="placeholder-div2">
+                                    <ion-row>
+                                      <h1>OVO</h1>
+                                        <p>IDR 1000</p>
+                                    </ion-row>
+                                  </div>
+                              </ion-col>
+                      </ion-row>
+                </ion-slide>
+                <ion-slide>
+                    <ion-row>
+                        <ion-col size=6>
+                          <img class="avatar1-img" src="assets/imgs/bag-img.png">
+                          <div class="placeholder-div">
+                            <ion-row>
+                              <h1>OVO</h1>
+                                <p>IDR 1000</p>
+                            </ion-row>
+                          </div>
+                        </ion-col>
+                        <ion-col size=6>
+                            <img class="avatar3-img" src="assets/imgs/gift-coupon.png">
+                            <div class="placeholder-div2">
+                                <ion-row>
+                                  <h1>OVO</h1>
+                                    <p>IDR 1000</p>
+                                </ion-row>
+                              </div>
+                          </ion-col>
+                          <ion-col size=6>
+                              <img class="avatar1-img" src="assets/imgs/notes.png">
+                              <div class="placeholder-div">
+                                  <ion-row>
+                                    <h1>OVO</h1>
+                                      <p>IDR 1000</p>
+                                  </ion-row>
+                                </div>
+                            </ion-col>
+                            <ion-col size=6>
+                                <img class="avatar2-img" src="assets/imgs/gift-coupon.png">
+                                <div class="placeholder-div2">
+                                    <ion-row>
+                                      <h1>OVO</h1>
+                                        <p>IDR 1000</p>
+                                    </ion-row>
+                                  </div>
+                              </ion-col>
+                      </ion-row>
+                </ion-slide>
+              </ion-slides>
+        </div>
+        <div *ngSwitchCase="'others'" class="others">
+          <ion-slides pager="true" style="z-index: 1" [options]="slideOpts">
+            <ion-slide> 
+                <ion-row>
+                    <ion-col size=6>
+                      <img class="avatar1-img" src="assets/imgs/bag-img.png">
+                      <div class="placeholder-div">
+                        <ion-row>
+                          <h1>OVO</h1>
+                            <p>IDR 1000</p>
+                        </ion-row>
+                      </div>
+                    </ion-col>
+                    <ion-col size=6>
+                        <img class="avatar3-img" src="assets/imgs/gift-coupon.png">
+                        <div class="placeholder-div2">
+                            <ion-row>
+                              <h1>OVO</h1>
+                                <p>IDR 1000</p>
+                            </ion-row>
+                          </div>
+                      </ion-col>
+                      <ion-col size=6>
+                          <img class="avatar1-img" src="assets/imgs/notes.png">
+                          <div class="placeholder-div">
+                              <ion-row>
+                                <h1>OVO</h1>
+                                  <p>IDR 1000</p>
+                              </ion-row>
+                            </div>
+                        </ion-col>
+                        <ion-col size=6>
+                            <img class="avatar2-img" src="assets/imgs/gift-coupon.png">
+                            <div class="placeholder-div2">
+                                <ion-row>
+                                  <h1>OVO</h1>
+                                    <p>IDR 1000</p>
+                                </ion-row>
+                              </div>
+                          </ion-col>
+                  </ion-row>
+              
+            </ion-slide>
+            <ion-slide>
+                <ion-row>
+                    <ion-col size=6>
+                      <img class="avatar1-img" src="assets/imgs/bag-img.png">
+                      <div class="placeholder-div">
+                        <ion-row>
+                          <h1>OVO</h1>
+                            <p>IDR 1000</p>
+                        </ion-row>
+                      </div>
+                    </ion-col>
+                    <ion-col size=6>
+                        <img class="avatar3-img" src="assets/imgs/gift-coupon.png">
+                        <div class="placeholder-div2">
+                            <ion-row>
+                              <h1>OVO</h1>
+                                <p>IDR 1000</p>
+                            </ion-row>
+                          </div>
+                      </ion-col>
+                      <ion-col size=6>
+                          <img class="avatar1-img" src="assets/imgs/notes.png">
+                          <div class="placeholder-div">
+                              <ion-row>
+                                <h1>OVO</h1>
+                                  <p>IDR 1000</p>
+                              </ion-row>
+                            </div>
+                        </ion-col>
+                        <ion-col size=6>
+                            <img class="avatar2-img" src="assets/imgs/gift-coupon.png">
+                            <div class="placeholder-div2">
+                                <ion-row>
+                                  <h1>OVO</h1>
+                                    <p>IDR 1000</p>
+                                </ion-row>
+                              </div>
+                          </ion-col>
+                  </ion-row>
+                  
+            </ion-slide>
+            <ion-slide>
+                <ion-row>
+                    <ion-col size=6>
+                      <img class="avatar1-img" src="assets/imgs/bag-img.png">
+                      <div class="placeholder-div">
+                        <ion-row>
+                          <h1>OVO</h1>
+                            <p>IDR 1000</p>
+                        </ion-row>
+                      </div>
+                    </ion-col>
+                    <ion-col size=6>
+                        <img class="avatar3-img" src="assets/imgs/gift-coupon.png">
+                        <div class="placeholder-div2">
+                            <ion-row>
+                              <h1>OVO</h1>
+                                <p>IDR 1000</p>
+                            </ion-row>
+                          </div>
+                      </ion-col>
+                      <ion-col size=6>
+                          <img class="avatar1-img" src="assets/imgs/notes.png">
+                          <div class="placeholder-div">
+                              <ion-row>
+                                <h1>OVO</h1>
+                                  <p>IDR 1000</p>
+                              </ion-row>
+                            </div>
+                        </ion-col>
+                        <ion-col size=6>
+                            <img class="avatar2-img" src="assets/imgs/gift-coupon.png">
+                            <div class="placeholder-div2">
+                                <ion-row>
+                                  <h1>OVO</h1>
+                                    <p>IDR 1000</p>
+                                </ion-row>
+                              </div>
+                          </ion-col>
+                  </ion-row>
+            </ion-slide>
+          </ion-slides>
+         </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <app-footer2 style="position: fixed; bottom: 0px; width: 100%; z-index: 1111111123123;"></app-footer2>
+</ion-content>

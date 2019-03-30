@@ -53,11 +53,14 @@
   <ion-list class="selector-list">  
     <ion-item class="selector-listt">
       
-      <ion-select class="custom-select" value="On" okText="Okay" cancelText="Dismiss" [(ngModel)]="audioStatus"
+      <ion-select class="custom-select"  okText="Okay" cancelText="Dismiss" [(ngModel)]="audioStatus"
       (ngModelChange)="changeAudio()"
       >
-        <ion-select-option value="on">On</ion-select-option>
         <ion-select-option value="off">Off</ion-select-option>
+        <ion-select-option value="25">25%</ion-select-option>
+        <ion-select-option value="50">50%</ion-select-option>
+        <ion-select-option value="75">75%</ion-select-option>
+        <ion-select-option value="100">100%</ion-select-option>
       </ion-select>
     </ion-item>
   
@@ -69,16 +72,11 @@
     <ion-item class="selector-listt">
       
       <ion-select class="custom-select" okText="Okay" cancelText="Dismiss" [(ngModel)]="volume" (ngModelChange)="setVolume()">
-        <ion-select-option value="10">10%</ion-select-option>
-        <ion-select-option value="20">20%</ion-select-option>
-        <ion-select-option value="30">30%</ion-select-option>
-        <ion-select-option value="40">40%</ion-select-option>
-        <ion-select-option value="50" selected>50%</ion-select-option>
-        <ion-select-option value="60">60%</ion-select-option>
-        <ion-select-option value="70">70%</ion-select-option>
-        <ion-select-option value="80">80%</ion-select-option>
-        <ion-select-option value="90">90%</ion-select-option>
-        <ion-select-option value="100">100%</ion-select-option>
+          <ion-select-option value="off">Off</ion-select-option>
+          <ion-select-option value="25">25%</ion-select-option>
+          <ion-select-option value="50">50%</ion-select-option>
+          <ion-select-option value="75">75%</ion-select-option>
+          <ion-select-option value="100">100%</ion-select-option>
       </ion-select>
     </ion-item>
   
