@@ -21,6 +21,7 @@ export class ProfilePage implements OnInit {
       this.audio.off();
     }
     else{
+      this.audio.on();
       this.audio.setVolume(parseInt(this.audioStatus) / 100);
     }
   }

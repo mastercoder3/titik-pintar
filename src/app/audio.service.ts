@@ -9,7 +9,35 @@ export class AudioService {
   bgVolume = .25;
   reactionVolume = .75;
 
-  constructor(private nativeAudio: NativeAudio) { }
+  constructor(private nativeAudio: NativeAudio) {
+
+    this.nativeAudio.preloadComplex('uniqueId2', 'assets/audio/Goodies.mp3', this.reactionVolume, 1, 0)
+    .then(res => {
+      
+    }, err =>{
+    });
+
+    this.nativeAudio.preloadComplex('uniqueId4', 'assets/audio/Lets-go.mp3', this.reactionVolume, 1, 0)
+    .then(res => {
+
+    }, err =>{
+
+    });
+
+    this.nativeAudio.preloadComplex('uniqueId3', 'assets/audio/Your-back.mp3', this.reactionVolume, 1, 0)
+    .then(res => {
+
+    }, err =>{
+      
+    });
+
+    this.nativeAudio.preloadComplex('uniqueId5', 'assets/audio/Not-available-yet.mp3', this.reactionVolume, 1, 0)
+    .then(res => {
+
+    }, err =>{
+    });
+
+   }
 
   createAudio(){
     this.nativeAudio.preloadComplex('uniqueId1', 'assets/audio/this-is-happiness.mp3', this.bgVolume, 1, 0)
@@ -23,41 +51,26 @@ export class AudioService {
   }
 
   createGoodies(){
-    this.nativeAudio.preloadComplex('uniqueId2', 'assets/audio/Goodies.mp3', this.reactionVolume, 1, 0)
-    .then(res => {
-      this.nativeAudio.play('uniqueId2');
-    }, err =>{
-      this.nativeAudio.play('uniqueId2');
-    });
+    this.nativeAudio.setVolumeForComplexAsset('uniqueId2', this.reactionVolume)
+    this.nativeAudio.play('uniqueId2');
   }
 
   createLetsGo(){
-    this.nativeAudio.preloadComplex('uniqueId4', 'assets/audio/Lets-go.mp3', this.reactionVolume, 1, 0)
-      .then(res => {
-        this.nativeAudio.play('uniqueId4');
-      }, err =>{
-        this.nativeAudio.play('uniqueId4');
-      });
+    this.nativeAudio.setVolumeForComplexAsset('uniqueId4', this.reactionVolume)
+
+    this.nativeAudio.play('uniqueId4');
   }
 
   createYourBack(){
-    this.nativeAudio.preloadComplex('uniqueId3', 'assets/audio/Your-back.mp3', this.reactionVolume, 1, 0)
-    .then(res => {
-      this.nativeAudio.play('uniqueId3');
+    this.nativeAudio.setVolumeForComplexAsset('uniqueId3', this.reactionVolume)
 
-    }, err =>{
-      this.nativeAudio.play('uniqueId3');
-    });
+    this.nativeAudio.play('uniqueId3');
   }
 
   createNotAvailable(){
-    this.nativeAudio.preloadComplex('uniqueId5', 'assets/audio/Not-available-yet.mp3', this.reactionVolume, 1, 0)
-    .then(res => {
-      this.nativeAudio.play('uniqueId5');
+    this.nativeAudio.setVolumeForComplexAsset('uniqueId5', this.reactionVolume)
 
-    }, err =>{
-      this.nativeAudio.play('uniqueId5');
-    });
+    this.nativeAudio.play('uniqueId5');
   }
 
   off(){
