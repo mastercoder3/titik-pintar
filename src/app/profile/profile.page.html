@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-row>
       <ion-col size=2>
-        <img class="bulp-img" src="assets/imgs/back.png">
+        <img class="bulp-img" src="assets/imgs/back.png" (click)="ClicktoBack()">
       </ion-col>
       <ion-col size=2>
         <img class="dollar-img" src="assets/imgs/dollar.png">
@@ -45,6 +45,19 @@
         <img class="rating-star" src="assets/imgs/rating-star2.png">
         <img class="rating-star" src="assets/imgs/rating-star2.png">
     </ion-row>
+    <h1 class="h1-5">Wallet</h1>
+    <ion-list class="selector-list2">  
+        <ion-item class="selector-listt">
+          
+          <ion-select class="custom-select2"  okText="Okay" cancelText="Dismiss" [(ngModel)]="goto" (ngModelChange)="goToPage()" 
+          aria-placeholder="Select" placeholder="Select" > 
+            <ion-select-option value="ovo">OVO</ion-select-option>
+            <ion-select-option value="coin">Coin</ion-select-option>
+            
+          </ion-select>
+        </ion-item>
+      
+      </ion-list>
   </ion-col>
 </ion-row>
 <ion-row>

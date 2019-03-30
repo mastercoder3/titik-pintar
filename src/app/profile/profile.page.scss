@@ -114,6 +114,7 @@ margin-left: 2vh;
     max-width: 100%;
     border-radius: 15px;
 }
+
 .h1-3{
     font-family: 'LooseySans';
 font-size: 3.5vh;
@@ -121,11 +122,28 @@ color: white;
 text-align: center;
 
 }
+.h1-5{
+    font-family: 'LooseySans';
+font-size: 3.5vh;
+color: white;
+text-align: left;
+margin-left: 9%;
+
+}
 .selector-list{
     border-radius: 15px;
     background-color:#860f7c;
     border:#d31cc4 3px solid;
     height: 40%;
+    margin-top: -5%;
+}
+.selector-list2{
+    border-radius: 15px;
+    background-color:#860f7c;
+    border:#d31cc4 3px solid;
+    height: 17%;
+    width: 70%;
+    margin-left: 7%;
     margin-top: -5%;
 }
 .selector-listt{

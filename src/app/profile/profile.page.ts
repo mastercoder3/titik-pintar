@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AudioService } from '../audio.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -10,8 +11,9 @@ export class ProfilePage implements OnInit {
 
   audioStatus = '25';
   volume = '75';
+  goto= '';
 
-  constructor(private audio: AudioService) { }
+  constructor(private audio: AudioService, private router:Router) { }
 
   ngOnInit() {
     this.volume = (this.audio.getReactionVolume() * 100 ).toString();
@@ -47,4 +49,22 @@ export class ProfilePage implements OnInit {
     }
   }
 
+  ClicktoBack(){
+    this.router.navigate(['home']);
+  }
+  ClicktoOvoStore(){
+    this.router.navigate(['store-ovo-version']);
+  }
+  ClicktoCoinStore(){
+    this.router.navigate(['store']);
+  }
+
+  goToPage(){
+    if(this.goto === 'ovo'){
+      this.router.navigate(['store-ovo-version'])
+    }
+    else if(this.goto === 'coin'){
+      this.router.navigate(['store']);
+    }
+  }
 }
