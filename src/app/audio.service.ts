@@ -51,30 +51,47 @@ export class AudioService {
   }
 
   createGoodies(){
-    this.nativeAudio.setVolumeForComplexAsset('uniqueId2', this.reactionVolume)
+    if(this.reactionVolume !== 0){
+         this.nativeAudio.setVolumeForComplexAsset('uniqueId2', this.reactionVolume)
     this.nativeAudio.play('uniqueId2');
+    }
+ 
   }
 
   createLetsGo(){
-    this.nativeAudio.setVolumeForComplexAsset('uniqueId4', this.reactionVolume)
+    if(this.reactionVolume !== 0){
+         this.nativeAudio.setVolumeForComplexAsset('uniqueId4', this.reactionVolume)
 
     this.nativeAudio.play('uniqueId4');
+    }
+ 
   }
 
   createYourBack(){
-    this.nativeAudio.setVolumeForComplexAsset('uniqueId3', this.reactionVolume)
+    if(this.reactionVolume !== 0){
+         this.nativeAudio.setVolumeForComplexAsset('uniqueId3', this.reactionVolume)
 
     this.nativeAudio.play('uniqueId3');
+    }
+ 
   }
 
   createNotAvailable(){
-    this.nativeAudio.setVolumeForComplexAsset('uniqueId5', this.reactionVolume)
+    if(this.reactionVolume !== 0){
+          this.nativeAudio.setVolumeForComplexAsset('uniqueId5', this.reactionVolume)
 
     this.nativeAudio.play('uniqueId5');
+    }
+
   }
 
   off(){
+    this.bgVolume = 0;
     this.nativeAudio.stop('uniqueId1');
+  }
+
+  getBgVolume(){
+    return this.bgVolume;
   }
 
   on(){
@@ -88,5 +105,13 @@ export class AudioService {
 
   setReactionVolume(val){
     this.reactionVolume = val;
+  }
+
+  offReactionVolume(){
+    this.reactionVolume = 0;
+  }
+
+  getReactionVolume(){
+    return this.reactionVolume;
   }
 }
