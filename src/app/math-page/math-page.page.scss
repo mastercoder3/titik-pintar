@@ -1,0 +1,56 @@
+
+ion-content{
+    --background: url('../../assets/imgs/BACKGROUND4.png') 0 0/100% 100% no-repeat;
+    width:100% !important;
+    background-size: cover !important;
+   background-attachment: fixed !important;
+}
+.back-img{
+    height: 6vh;
+    width: 5vh;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.h1{
+    font-family: 'LooseySans';
+    font-size: 4.6vh !important;
+    color: white;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+.math-avatar{
+    margin-top: 5px;
+    margin-left: -10px;
+}
+.outer-div{
+    height: 12vh;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inner-div{
+    height: 85%;
+    width: 96%;
+    background-color: #f0722d;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 7%;
+}
+.inner-div img{
+    margin-top: 5px;
+    margin-left: 5px;
+    height: 7vh;
+    width: 15vh;
+}
+.h1-2{
+    font-family: 'LooseySans';
+    font-size: 4.4vh !important;
+    color: white;
+    font-weight: bolder;
+    position: relative;
+    bottom: 10%;
+}

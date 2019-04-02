@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size=2>
+        <img class="cross-img" src="assets/imgs/cross.png" (click)="openModal()">
+      </ion-col>
+      <ion-col size=6>
+        <div class="top-div">
+    
+        </div>
+      </ion-col>
+      
+      <ion-col size=2>
+        <img class="dollar-img" src="assets/imgs/dollar.png">
+      </ion-col>
+      
+     </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<img class="top-img" src="assets/imgs/Asset2.png">
+<ion-row>
+  <ion-col size=12>
+    <h1 class="h1">Berapa banyak bulan dalam satu tahun?</h1>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col size=12>
+    <div class="Mcqs-div">
+        <h1 class="h1-2">6</h1>
+    </div>
+  </ion-col>
+</ion-row>
+<ion-row>
+    <ion-col size=12>
+      <div class="Mcqs-div2" (click)="checkAnswer()" [class.wrong-ans]="isWrong">
+        <ion-row>
+          <ion-col size=2>
+          <h1 class="h1-3 h1-33">9</h1>
+          </ion-col>
+          <ion-col size=7></ion-col>
+          <!-- <ion-col size=3>
+              <img class="wrong-ans-img" src="assets/imgs/wrong-ans-img.png">
+            </ion-col> -->
+        </ion-row>
+        
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+      <ion-col size=12>
+        <div class="Mcqs-div3" (click)="checkAnswer1()" [class.right-ans]="isright">
+            <h1 class="h1-2 h1-22">12</h1>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col size=12>
+          <div class="Mcqs-div3">
+              <h1 class="h1-2">22</h1>
+          </div>
+        </ion-col>
+      </ion-row>
+      <br><br><br><br><br><br><br><br><br><br>
+    <app-footer2 style="position: fixed; bottom: 0px; width: 100%; z-index: 1111111123123;"></app-footer2>
+</ion-content>

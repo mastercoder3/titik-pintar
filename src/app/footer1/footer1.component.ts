@@ -15,8 +15,16 @@ export class Footer1Component implements OnInit {
   ngOnInit() {}
   
   openStorePage(){
-    this.router.navigate(['store']);
-   
+    if(localStorage.getItem('key1')==='store-ovo-version'){
+      this.router.navigate(['store-ovo-version']);
+    }
+    else if(localStorage.getItem('key1')==='store'){
+      this.router.navigate(['store']);
+    }
+    else{
+      this.router.navigate(['store']);
+    }
+
     this.audio.createGoodies();
     
   }

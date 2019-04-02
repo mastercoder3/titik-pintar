@@ -75,3 +75,10 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 }
+.custom-modal .modal-wrapper {
+  --height:55% !important;
+  --width:75% !important;
+  border-radius: 10px;
+  border: #f99509 2px solid;
+  --background:#732b97;
+}

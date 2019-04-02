@@ -10,12 +10,13 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NativeAudio } from '@ionic-native/native-audio/ngx';
 import { AudioService } from './audio.service';
+import { MathPageModalComponent } from './math-page-modal/math-page-modal.component';
 
 
 
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
+  declarations: [AppComponent,MathPageModalComponent],
+  entryComponents: [MathPageModalComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [
     StatusBar,

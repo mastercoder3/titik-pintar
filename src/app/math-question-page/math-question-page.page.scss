@@ -1,0 +1,133 @@
+ion-toolbar{
+    --background: #b131f6; 
+    height: 100% !important;
+    z-index: -1;
+}
+ion-header{
+    height: 9% !important;
+    background-color: #b131f6;
+}
+ion-content{
+    --background:#f79509;
+}
+.cross-img{
+    height: 3.5vh;
+    width: 3.5vh;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+.top-div{
+    margin-left: 15px;
+    margin-top: 6px;
+    height: 4.5vh;
+    width: 30vh;
+    background-color: white;
+    border-radius: 15px;
+    border: #ffae00 3px solid;
+}
+.dollar-img{
+    height: 5vh;
+    width: 5vh;
+    margin-top: 3px;
+    margin-left: 55px;
+}
+.top-img{
+    min-width: 102%;
+    height: 40%;
+    margin-top: -10px;
+}
+.h1{
+    
+    font-family: 'LooseySans';
+font-size: 3.2vh !important;
+color: white;
+text-align: left;
+margin-left: 10%;
+margin-right: auto;
+}
+.Mcqs-div{
+    height: 7vh;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: auto;
+}
+.h1-2{
+    font-family: 'LooseySans';
+    font-size: 3.2vh !important;
+    color: #e6860a;  
+     font-size:5vh !important;
+     margin-left: 7%;
+     padding-top: 2%;
+}
+
+.Mcqs-div2{
+    height: 7vh;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: 2%;
+}
+.h1-3{
+    font-family: 'LooseySans';
+    font-size: 3.2vh !important;
+    color: #e6860a; 
+     font-size:5vh !important;
+     margin-left: 35%;
+    position: relative;
+    bottom: 28%;
+}
+.wrong-ans-img{
+    margin-top:-30%;
+}
+.Mcqs-div3{
+    height: 7vh;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: -3%;
+}
+
+.wrong-ans{
+    height: 7vh;
+    width: 80%;
+    background-color: #ee3711;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: 2%;
+    .h1-33{
+        font-family: 'LooseySans';
+        font-size: 3.2vh !important;
+        color: white; 
+         font-size:5vh !important;
+         margin-left: 35%;
+        position: relative;
+        bottom: 28%;
+    }
+}
+
+.right-ans{
+    height: 7vh;
+    width: 80%;
+    background-color: #6ECD41;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: -3%;
+    .h1-22{
+        font-family: 'LooseySans';
+        font-size: 3.2vh !important;
+        color: white;  
+         font-size:5vh !important;
+         margin-left: 7%;
+         padding-top: 2%;
+    }
+}
+
+

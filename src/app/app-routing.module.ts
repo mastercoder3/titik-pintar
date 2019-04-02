@@ -8,6 +8,8 @@ const routes: Routes = [
   { path: 'featured-screen', loadChildren: './featured-screen/featured-screen.module#FeaturedScreenPageModule' },
   { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
   { path: 'store-ovo-version', loadChildren: './store-ovo-version/store-ovo-version.module#StoreOVOVersionPageModule' },
+  { path: 'math-page', loadChildren: './math-page/math-page.module#MathPagePageModule' },
+  { path: 'math-question-page', loadChildren: './math-question-page/math-question-page.module#MathQuestionPagePageModule' },
 ];
 
 @NgModule({

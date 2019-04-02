@@ -20,9 +20,9 @@ ion-content{
     margin-left: 10px;
 }
 .top-profile-avatar{
-    height: 7vh;
-    width: 5vh;
-    margin-top: -3px;
+    height: 6vh;
+    width: 6vh;
+    
 }
 .dollar-count-div{
     height: 4vh;
@@ -114,6 +114,10 @@ margin-left: 2vh;
     max-width: 100%;
     border-radius: 15px;
 }
+.custom-select2{
+    max-width: 100%;
+    border-radius: 15px;
+}
 
 .h1-3{
     font-family: 'LooseySans';
@@ -126,7 +130,7 @@ text-align: center;
     font-family: 'LooseySans';
 font-size: 3.5vh;
 color: white;
-text-align: left;
+text-align: center;
 margin-left: 9%;
 
 }
@@ -136,6 +140,8 @@ margin-left: 9%;
     border:#d31cc4 3px solid;
     height: 40%;
     margin-top: -5%;
+    margin-left: 20px;
+    
 }
 .selector-list2{
     border-radius: 15px;
@@ -151,6 +157,7 @@ margin-left: 9%;
     --color: white !important;
     font-size: 2.5vh;
     margin-top: -10px;
+    
 }
 ion-select{
     font-family: 'LooseySans';
@@ -160,7 +167,7 @@ ion-select{
         font-family: 'LooseySans';
     font-size: 4vh;
     color: white;
-    margin-left: 10px;
+    margin-left: 22px;
     
 }
 ion-slides{

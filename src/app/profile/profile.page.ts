@@ -61,10 +61,11 @@ export class ProfilePage implements OnInit {
 
   goToPage(){
     if(this.goto === 'ovo'){
-      this.router.navigate(['store-ovo-version'])
+      localStorage.setItem('key1','store-ovo-version');
     }
     else if(this.goto === 'coin'){
-      this.router.navigate(['store']);
+      localStorage.setItem('key1','store');
+      
     }
   }
 }

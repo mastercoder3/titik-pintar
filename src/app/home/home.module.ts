@@ -6,6 +6,8 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 import { FeatureModule } from '../component.module';
+import { ProfilePage } from '../profile/profile.page';
+
 
 @NgModule({
   imports: [

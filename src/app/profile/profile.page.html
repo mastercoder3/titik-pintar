@@ -22,7 +22,7 @@
         </div>
       </ion-col>
       <ion-col size=2>
-        <img class="top-profile-avatar" src="assets/imgs/top-profile-avatar.png">
+        <img class="top-profile-avatar" src="assets/imgs/b.png">
       </ion-col>
     </ion-row>
   </ion-toolbar>
@@ -45,23 +45,11 @@
         <img class="rating-star" src="assets/imgs/rating-star2.png">
         <img class="rating-star" src="assets/imgs/rating-star2.png">
     </ion-row>
-    <h1 class="h1-5">Wallet</h1>
-    <ion-list class="selector-list2">  
-        <ion-item class="selector-listt">
-          
-          <ion-select class="custom-select2"  okText="Okay" cancelText="Dismiss" [(ngModel)]="goto" (ngModelChange)="goToPage()" 
-          aria-placeholder="Select" placeholder="Select" > 
-            <ion-select-option value="ovo">OVO</ion-select-option>
-            <ion-select-option value="coin">Coin</ion-select-option>
-            
-          </ion-select>
-        </ion-item>
-      
-      </ion-list>
+   
   </ion-col>
 </ion-row>
 <ion-row>
-  <ion-col size=4>
+  <ion-col size=5>
     <h1 class="h1-3">Music</h1>
   <ion-list class="selector-list">  
     <ion-item class="selector-listt">
@@ -79,7 +67,7 @@
   
   </ion-list>
 </ion-col>
-<ion-col size=4>
+<ion-col size=5>
     <h1 class="h1-3">Volume</h1>
   <ion-list class="selector-list">  
     <ion-item class="selector-listt">
@@ -95,7 +83,22 @@
   
   </ion-list>
 </ion-col>
-<ion-col size=4>
+<ion-col size=5>
+  <h1 class="h1-5">Wallet</h1>
+  <ion-list class="selector-list">  
+      <ion-item class="selector-listt">
+        
+        <ion-select class="custom-select"  okText="Okay" cancelText="Dismiss" [(ngModel)]="goto" (ngModelChange)="goToPage()" 
+         placeholder="Coin"> 
+          <ion-select-option value="ovo">OVO</ion-select-option>
+          <ion-select-option value="coin">Coin</ion-select-option>
+          
+        </ion-select>
+      </ion-item>
+    
+    </ion-list>
+</ion-col>
+<ion-col size=6>
     <h1 class="h1-3">Language</h1>
   <ion-list class="selector-list">  
     <ion-item class="selector-listt">
@@ -109,6 +112,7 @@
   
   </ion-list>
 </ion-col>
+
 </ion-row>
 
 <h1 class="h1-4">Your Avatar</h1>
@@ -139,5 +143,6 @@
         </ion-slides>
 </ion-row>
 </ion-grid>
-<br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+    <app-footer2 style="position: fixed; bottom: 0px; width: 100%; z-index: 1111111123123;"></app-footer2>
 </ion-content>
