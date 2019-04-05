@@ -23,8 +23,14 @@ export class MathQuestionPagePage implements OnInit {
   isright = false;
   checkAnswer(){
     this.isWrong = true;
+    setTimeout( () => {
+    this.helper.presentModal2();
+    },500);
   }
   checkAnswer1(){
     this.isright = true;
+    setTimeout( () => {
+      this.helper.presentModal3();
+      },500);
   }
 }

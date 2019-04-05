@@ -82,3 +82,17 @@
   border: #f99509 2px solid;
   --background:#732b97;
 }
+.custom-modal2 .modal-wrapper {
+  --height:100% !important;
+  --width:100% !important;
+  --background: transparent;
+  position: fixed;
+  margin-top: 60%;
+}
+.custom-modal3 .modal-wrapper {
+  --height:100% !important;
+  --width:100% !important;
+  --background: transparent;
+  position: fixed;
+  margin-top: 60%;
+}

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AudioService } from '../audio.service';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-profile',
@@ -11,9 +12,17 @@ export class ProfilePage implements OnInit {
 
   audioStatus = '25';
   volume = '75';
-  goto= '';
+  goto= 'coin';
+  lang:any;
 
-  constructor(private audio: AudioService, private router:Router) { }
+  constructor(private audio: AudioService, private router:Router, public translate: TranslateService) {
+    localStorage.setItem('key1','store');
+
+    this.lang = 'en';
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
+    localStorage.setItem('language','en');
+   }
 
   ngOnInit() {
     this.volume = (this.audio.getReactionVolume() * 100 ).toString();
@@ -67,5 +76,11 @@ export class ProfilePage implements OnInit {
       localStorage.setItem('key1','store');
       
     }
+  }
+
+  switchLanguage() {
+    localStorage.setItem('language',this.lang);
+    this.translate.use(this.lang);
+    this.audio.languageSwitcher(this.lang);
   }
 }

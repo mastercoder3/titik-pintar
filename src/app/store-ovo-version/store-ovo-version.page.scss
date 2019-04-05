@@ -48,17 +48,18 @@ ion-content{
 .ovo-img{
     position: absolute;
     height: 2vh;
-    width: 3.5vh;
+    width: 5vh;
     z-index: 2;
     margin-top: 17px;
+ 
 }
 .h6{
-    font-size: 1.3vh ;
+    font-size: 1.5vh ;
 color: white;
 text-align: left;
 font-weight: bolder;
 margin-top: -0%;
-margin-left: -8%;
+margin-left: -30%;
 }
 .para{
     font-size: 1.5vh;
@@ -75,7 +76,7 @@ color: #ffb600;
 text-align: left;
 font-weight: bolder;
 margin-top: 3px;
-margin-left: 10%;
+margin-left: 5%;
 z-index: 1111;
    text-shadow:
    -1px -1px 0 #000,  
@@ -83,6 +84,22 @@ z-index: 1111;
     -1px 1px 0 #000,
      1px 1px 0 #000;
 }
+.h1-para{
+    font-family: 'LooseySans';
+    font-size: 1.9vh ;
+    color: #ffb600;
+    text-align: left;
+    font-weight: bolder;
+    margin-top: 3px;
+    margin-left: 5%;
+    z-index: 1111;
+       text-shadow:
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
+    }
+
 
 @media (min-width: 375px) and  (max-width: 412px){
     .h1{

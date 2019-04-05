@@ -13,7 +13,11 @@ export class Footer1Component implements OnInit {
   constructor(private router: Router, private audio: AudioService) { }
 
   ngOnInit() {}
-  
+  openHomePage(){
+    this.router.navigate(['home']);
+    
+    this.audio.createLetsGo();
+  }
   openStorePage(){
     if(localStorage.getItem('key1')==='store-ovo-version'){
       this.router.navigate(['store-ovo-version']);

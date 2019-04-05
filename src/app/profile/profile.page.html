@@ -84,12 +84,12 @@
   </ion-list>
 </ion-col>
 <ion-col size=5>
-  <h1 class="h1-5">Wallet</h1>
+  <h1 class="h1-5">{{ 'WALLET' | translate }}</h1>
   <ion-list class="selector-list">  
       <ion-item class="selector-listt">
         
         <ion-select class="custom-select"  okText="Okay" cancelText="Dismiss" [(ngModel)]="goto" (ngModelChange)="goToPage()" 
-         placeholder="Coin"> 
+         > 
           <ion-select-option value="ovo">OVO</ion-select-option>
           <ion-select-option value="coin">Coin</ion-select-option>
           
@@ -99,13 +99,13 @@
     </ion-list>
 </ion-col>
 <ion-col size=6>
-    <h1 class="h1-3">Language</h1>
-  <ion-list class="selector-list">  
+    <h1 class="h1-3">{{ 'Language' | translate }}</h1>
+  <ion-list class="selector-list">
     <ion-item class="selector-listt">
       
-      <ion-select class="custom-select" value="English" okText="Okay" cancelText="Dismiss">
-        <ion-select-option value="English">English</ion-select-option>
-        <ion-select-option value="Bahasa">Bahasa</ion-select-option>
+      <ion-select class="custom-select" okText="Okay" cancelText="Dismiss"  [(ngModel)]="lang" (ionChange)="switchLanguage()">
+        <ion-select-option value="en">English</ion-select-option>
+        <ion-select-option value="ind">Indonesian</ion-select-option>
         
       </ion-select>
     </ion-item>
@@ -144,5 +144,5 @@
 </ion-row>
 </ion-grid>
 <br><br><br><br><br><br><br><br><br><br>
-    <app-footer2 style="position: fixed; bottom: 0px; width: 100%; z-index: 1111111123123;"></app-footer2>
+    <app-footer1 style="position: fixed; bottom: 0px; width: 100%; z-index: 1111111123123;"></app-footer1>
 </ion-content>

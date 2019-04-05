@@ -8,10 +8,16 @@ export class AudioService {
 
   bgVolume = .25;
   reactionVolume = .75;
+  audioGoodies:string;
 
   constructor(private nativeAudio: NativeAudio) {
-
-    this.nativeAudio.preloadComplex('uniqueId2', 'assets/audio/Goodies.mp3', this.reactionVolume, 1, 0)
+    if(localStorage.getItem('language') === 'en' && localStorage.getItem('language'))
+        this.audioGoodies = 'Goodies.mp3'
+    else if(localStorage.getItem('language') === 'ind' && localStorage.getItem('language'))
+      this.audioGoodies = 'Goodies-ind.mp3'
+    else  
+      this.audioGoodies = 'Goodies.mp3'
+    this.nativeAudio.preloadComplex('uniqueId2', 'assets/audio/'+this.audioGoodies, this.reactionVolume, 1, 0)
     .then(res => {
       
     }, err =>{
@@ -113,5 +119,16 @@ export class AudioService {
 
   getReactionVolume(){
     return this.reactionVolume;
+  }
+
+  languageSwitcher(lang){
+    if(lang === 'ind'){
+      this.nativeAudio.unload('uniqueId2');
+      this.audioGoodies = 'Goodies-ind.mp3'
+      this.nativeAudio.preloadComplex('uniqueId2', 'assets/audio/'+this.audioGoodies, this.reactionVolume, 1, 0)
+    .then(res => {
+    }, err =>{
+    });
+    }
   }
 }
