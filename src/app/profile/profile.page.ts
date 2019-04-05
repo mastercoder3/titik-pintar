@@ -18,10 +18,13 @@ export class ProfilePage implements OnInit {
   constructor(private audio: AudioService, private router:Router, public translate: TranslateService) {
     localStorage.setItem('key1','store');
 
-    this.lang = 'en';
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
-    localStorage.setItem('language','en');
+    if(localStorage.getItem('language')){
+      this.lang = localStorage.getItem('language')
+      this.translate.setDefaultLang(this.lang);
+      this.translate.use(this.lang);
+    }
+
+    
    }
 
   ngOnInit() {

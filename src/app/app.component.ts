@@ -15,6 +15,9 @@ export class AppComponent {
     private statusBar: StatusBar
   ) {
     this.initializeApp();
+    if(!localStorage.getItem('language')){
+      localStorage.setItem('language','en');
+    }
   }
 
   initializeApp() {

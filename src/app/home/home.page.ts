@@ -18,6 +18,7 @@ export class HomePage implements OnInit {
 
     setTimeout( () => {
       this.audio.createYourBack();
+      this.audio.initializeAudio(localStorage.getItem('language'));
     },500);
     
      
