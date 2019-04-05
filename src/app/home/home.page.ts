@@ -14,11 +14,13 @@ export class HomePage implements OnInit {
 
   ngOnInit(){
 
-    this.audio.createAudio();
+
 
     setTimeout( () => {
-      this.audio.createYourBack();
+
       this.audio.initializeAudio(localStorage.getItem('language'));
+      this.audio.createAudio();
+      this.audio.createYourBack();
     },500);
     
      
