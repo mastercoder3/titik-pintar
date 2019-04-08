@@ -1,0 +1,80 @@
+ion-content{
+    --background: url('../../assets/imgs/reward-page-background.png') 0 0/100% 100% no-repeat;
+    width:103% !important;
+    background-size: cover !important;
+   background-attachment: fixed !important;
+}
+.h1{
+    font-family: 'LooseySans';
+    font-size: 5vh !important;
+    text-align: center;
+    color: white;
+}
+.avatar{
+    height: 22vh;
+    width: 22vh;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.h1-2{
+    font-family: 'LooseySans';
+    font-size: 7.5vh !important;
+    color: #f8c509;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: -0.3vh;
+    
+       text-shadow:
+       -2px -2px 0 #773007,  
+        2px -2px 0 #773007,
+        -2px 2px 0 #773007,
+         2px 2px 0 #773007;
+    }
+
+.star{
+    height: 10vh;
+    width: 10vh;
+}
+.h1-3{
+    font-family: 'LooseySans';
+    font-size: 7.5vh !important;
+    color: #f8c509;
+    text-align: right;
+    font-weight: bolder;
+    margin-top: -0.1vh;
+    
+       text-shadow:
+       -2px -2px 0 #773007,  
+        2px -2px 0 #773007,
+        -2px 2px 0 #773007,
+         2px 2px 0 #773007;
+    }
+.h1-4{
+        font-family: 'LooseySans';
+        font-size: 7.5vh !important;
+        color: #f8c509;
+        text-align: left;
+        font-weight: bolder;
+        margin-top: -0.1vh;
+        margin-left: -25px;
+           text-shadow:
+           -2px -2px 0 #773007,  
+            2px -2px 0 #773007,
+            -2px 2px 0 #773007,
+             2px 2px 0 #773007;
+        }
+ .btn{
+    font-family: 'LooseySans';
+    font-size: 5.5vh !important;
+    letter-spacing: 1px;
+     height: 9%;
+     width: 40%;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     --border-radius: 10px;
+     --background:white;
+     --color:#773007;
+     
+ }       

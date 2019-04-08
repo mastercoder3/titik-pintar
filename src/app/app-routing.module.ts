@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'store-ovo-version', loadChildren: './store-ovo-version/store-ovo-version.module#StoreOVOVersionPageModule' },
   { path: 'math-page', loadChildren: './math-page/math-page.module#MathPagePageModule' },
   { path: 'math-question-page', loadChildren: './math-question-page/math-question-page.module#MathQuestionPagePageModule' },
+  { path: 'reward-page', loadChildren: './reward-page/reward-page.module#RewardPagePageModule' },
 ];
 
 @NgModule({
