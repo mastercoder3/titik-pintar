@@ -4,6 +4,7 @@ import { ServicesService } from '../services.service';
 import { Http, RequestOptions, Headers } from '@angular/http';
 import { ToastController } from '@ionic/angular';
 import { map } from 'rxjs/operators';
+import { AudioService } from '../audio.service';
 
 
  
@@ -18,7 +19,7 @@ export class MathQuestionPagePage implements OnInit {
   current;
   index:number = 0;
 
-  constructor(private helper:ServicesService,private http: Http, public modalControler:ModalController, private toast: ToastController) { }
+  constructor(private helper:ServicesService,private http: Http, public modalControler:ModalController, private audio:AudioService) { }
 
   ngOnInit() {
     this.getQuestions()
@@ -60,6 +61,7 @@ export class MathQuestionPagePage implements OnInit {
   isright = false;
   checkAnswer(){
     this.isWrong = true;
+    this.audio.createWrongAnswer();
     setTimeout( () => {
       this.helper.presentModal2(this.index,this.questions.length).then( res =>{
          this.helper.onDismiss().then(res =>{
@@ -80,6 +82,7 @@ export class MathQuestionPagePage implements OnInit {
   }
   checkAnswer1(){
     this.isright = true;
+    this.audio.createCorrectAnswer();
     setTimeout( () => {
       let id = Math.floor(Math.random()*4)+1
       this.helper.presentModalToaster(id);

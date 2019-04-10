@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {TranslateService} from '@ngx-translate/core';
+import { AudioService } from '../audio.service';
 
 @Component({
   selector: 'app-math-page',
@@ -13,6 +14,7 @@ export class MathPagePage implements OnInit {
 
   constructor(
       private router:Router,
+      private audio:AudioService,
       public translate: TranslateService) {
 
     if(localStorage.getItem('language')){
@@ -29,5 +31,6 @@ ClickBacktoHome(){
 }
 ClicktoQuestionPage(){
   this.router.navigate(['math-question-page']);
+  this.audio.createQuestionPageSound();
 }
 }

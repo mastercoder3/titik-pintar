@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
 import {TranslateService} from '@ngx-translate/core';
+import { AudioService } from '../audio.service';
 
 @Component({
   selector: 'app-store',
@@ -13,6 +14,7 @@ export class StorePage implements OnInit {
   selector: string = "avatars";
   constructor(
       private router:Router,
+      private audio:AudioService,
       public translate: TranslateService) {
 
     if(localStorage.getItem('language')){
@@ -29,5 +31,11 @@ export class StorePage implements OnInit {
   }
   changeSwitchCase(val){
     this.selector = val;
+    if(val==='avatars'){
+     this.audio.createAvatarChange();
+    }
+    else{
+      this.audio.createGiftsChange();
+    }
   }
 }
