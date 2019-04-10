@@ -1,0 +1,35 @@
+[
+    {
+        "question":"Sebutkan musim yang berlaku di Indonesia?  done",
+        "ans1":2,
+        "ans2":4,
+        "ans3":5,
+        "ans4":1,
+        "imageURL":"assets/imgs/Asset2.png"
+    },
+    {
+        "question":"Berapa detik dalam 2 jam ? ",
+        "ans1":3400,
+        "ans2":5000,
+        "ans3":1200,
+        "ans4":7200,
+        "imageURL":"assets/imgs/Picture-question-3.jpg"
+    },
+    {
+        "question":"Musim hujan berada di bulan? ",
+        "ans1":"Oktober",
+        "ans2":"April",
+        "ans3":"Juli",
+        "ans4":"Agustus",
+        "imageURL":"assets/imgs/Picture-question-4.jpg"
+    },
+    {
+        "question":"Musim kemarau berada di bulan? ",
+        "ans1":"Juni",
+        "ans2":"Desember",
+        "ans3":"Maret",
+        "ans4":"Januari",
+        "imageURL":"assets/imgs/Picture-question-5.jpg"
+    }
+    
+]

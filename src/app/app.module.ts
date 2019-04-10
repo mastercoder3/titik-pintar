@@ -5,7 +5,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { IonicModule, IonicRouteStrategy, ToastController } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
@@ -16,6 +16,7 @@ import { AudioService } from './audio.service';
 import { MathPageModalComponent } from './math-page-modal/math-page-modal.component';
 import { ModalWrongAnsComponent } from './modal-wrong-ans/modal-wrong-ans.component';
 import { ModalRightAnsComponent } from './modal-right-ans/modal-right-ans.component';
+import { ModalToasterComponent } from './modal-toaster/modal-toaster.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -23,8 +24,8 @@ export function createTranslateLoader(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [AppComponent,MathPageModalComponent,ModalWrongAnsComponent,ModalRightAnsComponent],
-  entryComponents: [MathPageModalComponent, ModalWrongAnsComponent, ModalRightAnsComponent],
+  declarations: [AppComponent,MathPageModalComponent,ModalWrongAnsComponent,ModalRightAnsComponent,ModalToasterComponent],
+  entryComponents: [MathPageModalComponent, ModalWrongAnsComponent, ModalRightAnsComponent,ModalToasterComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,HttpClientModule, TranslateModule.forRoot({
     loader: {
       provide: TranslateLoader,
@@ -36,6 +37,7 @@ export function createTranslateLoader(http: HttpClient) {
     StatusBar,
     SplashScreen,
     NativeAudio,
+    ToastController,
     AudioService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],

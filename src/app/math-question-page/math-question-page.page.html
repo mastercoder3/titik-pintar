@@ -20,17 +20,17 @@
 
 <ion-content>
 <div class="top-img-div">
-  <img class="top-img" src="assets/imgs/Asset2.png">
+  <img class="top-img" src="{{current?.imageURL}}">
 </div>
 <ion-row>
   <ion-col size=12>
-    <h1 class="h1">Berapa banyak bulan dalam satu tahun?</h1>
+    <h1 class="h1">{{current?.question}}</h1>
   </ion-col>
 </ion-row>
 <ion-row>
   <ion-col size=12>
     <div class="Mcqs-div">
-        <h1 class="h1-2">6</h1>
+        <h1 class="h1-2">{{current?.ans1}}</h1>
     </div>
   </ion-col>
 </ion-row>
@@ -38,8 +38,8 @@
     <ion-col size=12>
       <div class="Mcqs-div2" (click)="checkAnswer()" [class.wrong-ans]="isWrong">
         <ion-row>
-          <ion-col size=2>
-          <h1 class="h1-3 h1-33">9</h1>
+          <ion-col size=12>
+          <h1 class="h1-3 h1-33">{{current?.ans2}}</h1>
           </ion-col>
           <ion-col size=7></ion-col>
           <!-- <ion-col size=3>
@@ -54,14 +54,14 @@
   <ion-row>
       <ion-col size=12>
         <div class="Mcqs-div3" (click)="checkAnswer1()" [class.right-ans]="isright">
-            <h1 class="h1-2 h1-22">12</h1>
+            <h1 class="h1-2 h1-22">{{current?.ans3}}</h1>
         </div>
       </ion-col>
     </ion-row>
     <ion-row>
         <ion-col size=12>
           <div class="Mcqs-div3">
-              <h1 class="h1-2">22</h1>
+              <h1 class="h1-2">{{current?.ans4}}</h1>
           </div>
         </ion-col>
       </ion-row>

@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { ModalController } from '@ionic/angular';
+import { ModalController, NavParams } from '@ionic/angular';
 
 @Component({
   selector: 'app-modal-right-ans',
@@ -11,9 +11,22 @@ export class ModalRightAnsComponent implements OnInit {
 
   constructor( private router:Router, private helper: ModalController) { }
 
-  ngOnInit() {}
+  @Input() value: number;
+  @Input() length: number;
 
-  async ClickToRewardPage(){
+  ngOnInit() {
+  }
+
+  ClickToRewardPage(){
+    if(this.length-1 === this.value){
+      this.openFinish();
+    }
+    else{
+      this.helper.dismiss();
+    }
+  }
+
+  async openFinish(){
     const modal = await this.helper.getTop();
     modal.dismiss();
     this.router.navigate(['reward-page']);

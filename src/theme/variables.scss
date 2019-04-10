@@ -96,3 +96,8 @@
   position: fixed;
   margin-top: 60%;
 }
+.custom-modaltoaster .modal-wrapper {
+  --height:100% !important;
+  --width:100% !important;
+  --background: transparent;
+}

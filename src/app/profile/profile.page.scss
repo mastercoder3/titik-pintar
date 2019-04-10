@@ -174,12 +174,15 @@ ion-slides{
     --bullet-background: rgb(247, 8, 8) !important;
     --bullet-background-active: white !important;
 }
-.avatar3-img{
-    height: 87%;
-    width: 110%;
-}
+
 .avatar1-img{
-    height: 92%;
-    width: 110%;
+    height: 100%;
+    width: 85%;
+    margin-top: -12px;
+}
+
+.avatar2-img{
+    height: 100%;
+    width: 100%;
     margin-top: -12px;
 }

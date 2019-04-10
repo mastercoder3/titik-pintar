@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
 import { FeatureModule } from '../component.module';
+import { TranslateModule } from '@ngx-translate/core';
 import { ProfilePage } from '../profile/profile.page';
 
 
@@ -15,6 +16,7 @@ import { ProfilePage } from '../profile/profile.page';
     FeatureModule,  
     FormsModule,
     IonicModule,
+    TranslateModule,
     RouterModule.forChild([
       {
         path: '',

@@ -29,6 +29,7 @@ ion-content{
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
+
 }
 .inner-div{
     height: 85%;
@@ -40,7 +41,19 @@ ion-content{
     position: relative;
     top: 7%;
 }
-.inner-div img{
+
+.inner-div-glow{
+    background-image: url('../../assets/imgs/slash.png');
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-size: 40px 25px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.inner-div-glow img{
     margin-top: 5px;
     margin-left: 5px;
     height: 7vh;
@@ -48,7 +61,7 @@ ion-content{
 }
 .h1-2{
     font-family: 'LooseySans';
-    font-size: 4.4vh !important;
+    font-size: 3.8vh !important;
     color: white;
     font-weight: bolder;
     position: relative;

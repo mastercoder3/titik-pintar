@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { MathQuestionPagePage } from './math-question-page.page';
 import { FeatureModule } from '../component.module';
+import { HttpModule } from '@angular/http';
 
 const routes: Routes = [
   {
@@ -19,6 +20,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     FormsModule,
+    HttpModule,
     IonicModule,
     FeatureModule,
     RouterModule.forChild(routes)

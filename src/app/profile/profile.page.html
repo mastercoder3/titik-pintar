@@ -50,7 +50,7 @@
 </ion-row>
 <ion-row>
   <ion-col size=5>
-    <h1 class="h1-3">Music</h1>
+    <h1 class="h1-3">{{ 'MUSIC' | translate }}</h1>
   <ion-list class="selector-list">  
     <ion-item class="selector-listt">
       
@@ -68,7 +68,7 @@
   </ion-list>
 </ion-col>
 <ion-col size=5>
-    <h1 class="h1-3">Volume</h1>
+    <h1 class="h1-3">{{ 'VOLUME' | translate }}</h1>
   <ion-list class="selector-list">  
     <ion-item class="selector-listt">
       
@@ -99,7 +99,7 @@
     </ion-list>
 </ion-col>
 <ion-col size=6>
-    <h1 class="h1-3">{{ 'Language' | translate }}</h1>
+    <h1 class="h1-3">{{ 'LANGUAGE' | translate }}</h1>
   <ion-list class="selector-list">
     <ion-item class="selector-listt">
       
@@ -115,33 +115,35 @@
 
 </ion-row>
 
-<h1 class="h1-4">Your Avatar</h1>
-<ion-row>
-    <ion-slides pager="true" style="z-index: 1">
-        <ion-slide> 
-          <ion-row>
-            <ion-col size=6>
-              <img class="avatar1-img" src="assets/imgs/profile-oldman.png">
-            </ion-col>
-            <ion-col size=5>
-                <img class="avatar3-img" src="assets/imgs/profile-oldman2.png">
-              </ion-col>
-          </ion-row>
-          
-        </ion-slide>
-        <ion-slide>
-            <ion-row>
-                <ion-col size=6>
-                  <img class="avatar1-img" src="assets/imgs/profile-oldman.png">
-                </ion-col>
-                <ion-col size=5>
-                    <img class="avatar3-img" src="assets/imgs/profile-oldman2.png">
-                  </ion-col>
-              </ion-row>
-              
-        </ion-slide>
-        </ion-slides>
-</ion-row>
+<h1 class="h1-4">{{ 'YOUR AVATAR' | translate }}</h1>
+      <ion-row>
+          <ion-slides pager="true" style="z-index: 1">
+              <ion-slide>
+                  <ion-grid>
+                      <ion-row>
+                          <ion-col>
+                              <img class="avatar1-img" src="assets/imgs/avatar1.png">
+                          </ion-col>
+                          <ion-col>
+                              <img class="avatar2-img" src="assets/imgs/avatar2.png">
+                          </ion-col>
+                      </ion-row>
+                  </ion-grid>
+              </ion-slide>
+              <ion-slide>
+                  <ion-grid>
+                      <ion-row>
+                          <ion-col>
+                              <img src="assets/imgs/avatar3.png">
+                          </ion-col>
+                          <ion-col>
+                              <img src="assets/imgs/avatar4.png">
+                          </ion-col>
+                      </ion-row>
+                  </ion-grid>
+              </ion-slide>
+          </ion-slides>
+      </ion-row>
 </ion-grid>
 <br><br><br><br><br><br><br><br><br><br>
     <app-footer1 style="position: fixed; bottom: 0px; width: 100%; z-index: 1111111123123;"></app-footer1>

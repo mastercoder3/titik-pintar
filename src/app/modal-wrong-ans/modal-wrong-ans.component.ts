@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 
@@ -11,8 +11,19 @@ export class ModalWrongAnsComponent implements OnInit {
 
   constructor(private router:Router, private helper: ModalController) { }
 
+  @Input() value: number;
+  @Input() length: number;
+
   ngOnInit() {}
-  async ClickToRewardPage(){
+   ClickToRewardPage(){
+    if(this.length-1 === this.value){
+      this.openFinish();
+    }
+    else{
+      this.helper.dismiss();
+    }
+  }
+  async openFinish(){
     const modal = await this.helper.getTop();
     modal.dismiss();
     this.router.navigate(['reward-page']);
