@@ -29,22 +29,19 @@
 </ion-row>
 <ion-row>
   <ion-col size=12>
-    <div class="Mcqs-div">
+    <div class="Mcqs-div" (click)="checkAnswer(1)" [class.right-ans]="isAnswerRight[0]" [class.wrong-ans]="isAnswerWrong[0]">
         <h1 class="h1-2">{{current?.ans1}}</h1>
     </div>
   </ion-col>
 </ion-row>
 <ion-row>
     <ion-col size=12>
-      <div class="Mcqs-div2" (click)="checkAnswer()" [class.wrong-ans]="isWrong">
+      <div class="Mcqs-div2" (click)="checkAnswer(2)" [class.right-ans]="isAnswerRight[1]" [class.wrong-ans]="isAnswerWrong[1]">
         <ion-row>
           <ion-col size=12>
           <h1 class="h1-3 h1-33">{{current?.ans2}}</h1>
           </ion-col>
           <ion-col size=7></ion-col>
-          <!-- <ion-col size=3>
-              <img class="wrong-ans-img" src="assets/imgs/wrong-ans-img.png">
-            </ion-col> -->
         </ion-row>
         
       </div>
@@ -53,14 +50,14 @@
 
   <ion-row>
       <ion-col size=12>
-        <div class="Mcqs-div3" (click)="checkAnswer1()" [class.right-ans]="isright">
+        <div class="Mcqs-div3" (click)="checkAnswer(3)" [class.right-ans]="isAnswerRight[2]" [class.wrong-ans]="isAnswerWrong[2]">
             <h1 class="h1-2 h1-22">{{current?.ans3}}</h1>
         </div>
       </ion-col>
     </ion-row>
     <ion-row>
-        <ion-col size=12>
-          <div class="Mcqs-div3">
+        <ion-col size=12> 
+          <div class="Mcqs-div3" (click)="checkAnswer(4)" [class.right-ans]="isAnswerRight[3]" [class.wrong-ans]="isAnswerWrong[3]">
               <h1 class="h1-2">{{current?.ans4}}</h1>
           </div>
         </ion-col>

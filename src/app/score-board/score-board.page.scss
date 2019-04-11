@@ -1,0 +1,137 @@
+ion-toolbar{
+    --background: #93E022; 
+    height: 100% !important;
+    z-index: -1;
+}
+ion-header{
+    height: 9% !important;
+    background-color: #93E022;
+}
+ion-content{
+    --background: url('../../assets/imgs/BACKGROUND3.png') 0 0/100% 100% no-repeat;
+    width:102% !important;
+    background-size: cover !important;
+   background-attachment: fixed !important;
+}
+.bulp-img{
+    height: 7.5vh;
+    width: 6vh;
+    margin-top: -7px;
+}
+.dollar-count-div{
+    height: 4vh;
+    width: 10vh;
+    background-color: #7de7df;
+    border: #06bbca 2px solid;
+    border-radius: 5px;
+    margin-left: -5vh;
+    z-index: -1;
+    margin-top: 9px;
+}
+.dollar-img{
+    position: absolute;
+    height: 5vh;
+    width: 5vh;
+    z-index: 2;
+    margin-top: 5px;
+}
+
+.h1{
+    font-family: 'LooseySans';
+font-size: 3.2vh !important;
+color: #feeb03;
+text-align: left;
+font-weight: bolder;
+margin-top: -0.3vh;
+margin-left: 10%;
+   text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+@media (min-width: 375px) and  (max-width: 412px){
+    .h1{
+        font-family: 'LooseySans';
+    font-size: 3.5vh;
+    color: #feeb03;
+    text-align: left;
+    font-weight: bolder;
+    margin-top: -0.3vh;
+    margin-left: 20%;
+       text-shadow:
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
+    }
+}
+
+.h1-2{
+    font-family: 'LooseySans';
+    font-size: 4.5vh;
+    color: #5a371d;
+    font-weight: bolder !important;
+    margin-top: 10%;
+    margin-left: 2%;
+}
+.number-div{
+    height: 6.5vh;
+    width: 12%;
+    background-color: #da4ea7;
+    border: #83255f 2px solid;
+    border-radius: 15px;
+    position: absolute;
+    left: 2%;
+    margin-top: 2.6%;
+}
+.number-div h1{
+    color:white;
+    font-family: 'LooseySans';
+    font-size: 4vh;
+    margin-left: 25%;
+    position: relative;
+    bottom: 15px;
+}
+
+.score-board-div{
+    height: 10vh;
+    width: 80%;
+    background-color: white;
+    border:#da4ea7 2px solid;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.score-board-div h1{
+    font-family: 'LooseySans';
+    font-size: 4vh;
+    color: #83255f;
+    margin-left: 15%;
+    position: relative;
+    bottom: 12%;
+}
+.score-avatar{
+    height: 80%;
+    width: 5vh;
+}
+.star{
+    height: 60%;
+    width: 5vh;
+    margin-top: 15%;
+    margin-left: 80%;
+}
+.more-button{
+    margin-left:auto;
+    margin-right: auto;
+    height: 8vh;
+    width: 30%;
+}
+.giftbox{
+    height: 9vh;
+    margin-left: 10%;
+}
+.icecream{
+    height: 10vh;
+    margin-left: 10%;
+}

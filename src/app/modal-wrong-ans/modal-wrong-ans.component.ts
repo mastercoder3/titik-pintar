@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
+import { AudioService } from '../audio.service';
 
 @Component({
   selector: 'app-modal-wrong-ans',
@@ -9,7 +10,7 @@ import { ModalController } from '@ionic/angular';
 })
 export class ModalWrongAnsComponent implements OnInit {
 
-  constructor(private router:Router, private helper: ModalController) { }
+  constructor(private router:Router, private helper: ModalController, private audio:AudioService) { }
 
   @Input() value: number;
   @Input() length: number;
@@ -27,5 +28,6 @@ export class ModalWrongAnsComponent implements OnInit {
     const modal = await this.helper.getTop();
     modal.dismiss();
     this.router.navigate(['reward-page']);
+    this.audio.createYouhaveDoneit();
   }
 }

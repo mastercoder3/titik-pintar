@@ -32,5 +32,8 @@ export class Footer1Component implements OnInit {
     this.audio.createGoodies();
     
   }
+  openRankPage(){
+    this.router.navigate(['score-board']);
+  }
  
 }

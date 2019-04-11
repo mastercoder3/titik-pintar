@@ -31,6 +31,11 @@ ClickBacktoHome(){
 }
 ClicktoQuestionPage(){
   this.router.navigate(['math-question-page']);
-  this.audio.createQuestionPageSound();
+  this.audio.createDateAndTime();
+  setTimeout( () =>  {
+    this.audio.createQuestionPageSound();
+  }, 1000
+);
+  
 }
 }

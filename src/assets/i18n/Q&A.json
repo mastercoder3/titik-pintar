@@ -5,7 +5,8 @@
         "ans2":4,
         "ans3":5,
         "ans4":1,
-        "imageURL":"assets/imgs/Asset2.png"
+        "imageURL":"assets/imgs/Asset2.png",
+        "rightAns": 1
     },
     {
         "question":"Berapa detik dalam 2 jam ? ",
@@ -13,7 +14,8 @@
         "ans2":5000,
         "ans3":1200,
         "ans4":7200,
-        "imageURL":"assets/imgs/Picture-question-3.jpg"
+        "imageURL":"assets/imgs/Picture-question-3.jpg",
+        "rightAns": 3
     },
     {
         "question":"Musim hujan berada di bulan? ",
@@ -21,7 +23,8 @@
         "ans2":"April",
         "ans3":"Juli",
         "ans4":"Agustus",
-        "imageURL":"assets/imgs/Picture-question-4.jpg"
+        "imageURL":"assets/imgs/Picture-question-4.jpg",
+        "rightAns": 4
     },
     {
         "question":"Musim kemarau berada di bulan? ",
@@ -29,7 +32,8 @@
         "ans2":"Desember",
         "ans3":"Maret",
         "ans4":"Januari",
-        "imageURL":"assets/imgs/Picture-question-5.jpg"
+        "imageURL":"assets/imgs/Picture-question-5.jpg",
+        "rightAns": 2
     }
     
 ]

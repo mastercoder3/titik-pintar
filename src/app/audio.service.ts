@@ -165,6 +165,42 @@ export class AudioService {
   
       }, err =>{
       });
+
+      this.nativeAudio.preloadComplex('uniqueId26', 'assets/audio/Exit-ind.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId27', 'assets/audio/Exit.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId28', 'assets/audio/Youve-done-it-ind.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId29', 'assets/audio/Youve-done-it.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId30', 'assets/audio/Time-ind.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId31', 'assets/audio/Time.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
     }
    }
 
@@ -329,6 +365,42 @@ export class AudioService {
       else{
     this.nativeAudio.setVolumeForComplexAsset('uniqueId25', this.reactionVolume)
     this.nativeAudio.play('uniqueId25');
+      }
+    }
+  }
+  createExit(){
+    if(this.reactionVolume !== 0){
+      if(this.lang === 'ind'){
+        this.nativeAudio.setVolumeForComplexAsset('uniqueId26', this.reactionVolume)
+        this.nativeAudio.play('uniqueId26');
+      }
+      else{
+    this.nativeAudio.setVolumeForComplexAsset('uniqueId27', this.reactionVolume)
+    this.nativeAudio.play('uniqueId27');
+      }
+    }
+  }
+  createYouhaveDoneit(){
+    if(this.reactionVolume !== 0){
+      if(this.lang === 'ind'){
+        this.nativeAudio.setVolumeForComplexAsset('uniqueId28', this.reactionVolume)
+        this.nativeAudio.play('uniqueId28');
+      }
+      else{
+    this.nativeAudio.setVolumeForComplexAsset('uniqueId29', this.reactionVolume)
+    this.nativeAudio.play('uniqueId29');
+      }
+    }
+  }
+  createDateAndTime(){
+    if(this.reactionVolume !== 0){
+      if(this.lang === 'ind'){
+        this.nativeAudio.setVolumeForComplexAsset('uniqueId30', this.reactionVolume)
+        this.nativeAudio.play('uniqueId30');
+      }
+      else{
+    this.nativeAudio.setVolumeForComplexAsset('uniqueId31', this.reactionVolume)
+    this.nativeAudio.play('uniqueId31');
       }
     }
   }

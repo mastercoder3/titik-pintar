@@ -18,6 +18,8 @@ export class MathQuestionPagePage implements OnInit {
   questions;
   current;
   index:number = 0;
+  isAnswerRight=[false,false,false,false];
+  isAnswerWrong=[false,false,false,false];
 
   constructor(private helper:ServicesService,private http: Http, public modalControler:ModalController, private audio:AudioService) { }
 
@@ -27,7 +29,7 @@ export class MathQuestionPagePage implements OnInit {
         this.questions = res;
         this.current = this.questions[0];
         this.index = 0;
-      })
+      });
   }
 
   getQuestions(){
@@ -44,7 +46,8 @@ export class MathQuestionPagePage implements OnInit {
   }
 
   openModal(){
-    this.helper.presentModal()
+    this.helper.presentModal();
+    this.audio.createExit();
   }
   // async presentToast() {
   //   const toast = await this.toast.create({
@@ -59,8 +62,14 @@ export class MathQuestionPagePage implements OnInit {
 
   isWrong = false;
   isright = false;
-  checkAnswer(){
-    this.isWrong = true;
+  checkAnswer(val){
+    if(val === this.current.rightAns){
+      this.checkAnswer1();
+      this.isAnswerRight[val-1] = true;
+    }
+    else{
+      this.isAnswerWrong[val-1] = true;
+       this.isWrong = true;
     this.audio.createWrongAnswer();
     setTimeout( () => {
       this.helper.presentModal2(this.index,this.questions.length).then( res =>{
@@ -74,11 +83,14 @@ export class MathQuestionPagePage implements OnInit {
              this.index = 0;
              this.current = this.questions[this.index];
            }
-           this.isWrong = false;
+           this.isAnswerRight=[false,false,false,false];
+           this.isAnswerWrong=[false,false,false,false];
       })
       })
      
       },500);
+    }
+   
   }
   checkAnswer1(){
     this.isright = true;
@@ -97,11 +109,16 @@ export class MathQuestionPagePage implements OnInit {
              this.index = 0;
              this.current = this.questions[this.index];
            }
-           this.isright = false;
            this.modalControler.dismiss();
+           this.isAnswerRight=[false,false,false,false];
+           this.isAnswerWrong=[false,false,false,false];
       })
       })
      
       },500);
   }
+
+
+
+
 }
