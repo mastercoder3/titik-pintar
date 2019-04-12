@@ -24,19 +24,33 @@ export class MathQuestionPagePage implements OnInit {
   constructor(private helper:ServicesService,private http: Http, public modalControler:ModalController, private audio:AudioService) { }
 
   ngOnInit() {
-    this.getQuestions()
-      .subscribe(res =>{
-        this.questions = res;
-        this.current = this.questions[0];
-        this.index = 0;
-      });
-  }
+    this.helper.getLanguage().subscribe(res =>{
+      if(res ==='en'){
+        this.getQuestions('Q&A-eng')
+        .subscribe(res =>{
+          this.questions = res;
+          this.current = this.questions[0];
+          this.index = 0;
+        });
+      }
+      else{
+        this.getQuestions('Q&A')
+        .subscribe(res =>{
+          this.questions = res;
+          this.current = this.questions[0];
+          this.index = 0;
+        });
+      }
+    })
+    
+    }
+    
 
-  getQuestions(){
+  getQuestions(val){
     let myHeaders = new Headers();
     myHeaders.append('Content-Type', 'application/json');    
        let options = new RequestOptions({ headers: myHeaders });
-    return this.http.get('./assets/i18n/Q&A.json',options)
+    return this.http.get('./assets/i18n/'+val+'.json',options)
     .pipe(map((this.extractData)))
   }
 
@@ -72,7 +86,7 @@ export class MathQuestionPagePage implements OnInit {
        this.isWrong = true;
     this.audio.createWrongAnswer();
     setTimeout( () => {
-      this.helper.presentModal2(this.index,this.questions.length).then( res =>{
+      this.helper.presentModal2(this.index,this.questions.length,this.current.answerStatement).then( res =>{
          this.helper.onDismiss().then(res =>{
            this.index++;
            if(this.index !== this.questions.length  ){
@@ -98,7 +112,7 @@ export class MathQuestionPagePage implements OnInit {
     setTimeout( () => {
       let id = Math.floor(Math.random()*4)+1
       this.helper.presentModalToaster(id);
-      this.helper.presentModal3(this.index,this.questions.length).then( res =>{
+      this.helper.presentModal3(this.index,this.questions.length,this.current.answerStatement).then( res =>{
          this.helper.onDismiss().then(res =>{
            this.index++;
            if(this.index !== this.questions.length  ){

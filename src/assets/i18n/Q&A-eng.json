@@ -1,0 +1,43 @@
+[
+    {
+        "question":"Mention the season in force in Indonesia? done",
+        "ans1":2,
+        "ans2":4,
+        "ans3":5,
+        "ans4":1,
+        "imageURL":"assets/imgs/Asset2.png",
+        "rightAns": 1,
+        "answerStatement":"In one year there are 12 months. January, February, March, April, May, June, July, August, Septempber, Octubar, November, December."
+    },
+    {
+        "question":"How many seconds in 2 hours? ",
+        "ans1":3400,
+        "ans2":5000,
+        "ans3":1200,
+        "ans4":7200,
+        "imageURL":"assets/imgs/Picture-question-3.jpg",
+        "rightAns": 3,
+        "answerStatement":"There are 1200 seconds in 2 hours"
+    },
+    {
+        "question":"The rainy season is on the moon? ",
+        "ans1":"October",
+        "ans2":"April",
+        "ans3":"July",
+        "ans4":"August",
+        "imageURL":"assets/imgs/Picture-question-4.jpg",
+        "rightAns": 4,
+        "answerStatement":"The rainy season is on August"
+    },
+    {
+        "question":"The dry season is on the moon? ",
+        "ans1":"June",
+        "ans2":"December",
+        "ans3":"March",
+        "ans4":"January",
+        "imageURL":"assets/imgs/Picture-question-5.jpg",
+        "rightAns": 2,
+        "answerStatement":"The dry season is on December"
+    }
+    
+]

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AudioService } from '../audio.service';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { ServicesService } from '../services.service';
 
 @Component({
   selector: 'app-profile',
@@ -15,7 +16,7 @@ export class ProfilePage implements OnInit {
   goto= 'coin';
   lang:any;
 
-  constructor(private audio: AudioService, private router:Router, public translate: TranslateService) {
+  constructor(private audio: AudioService, private router:Router, public translate: TranslateService,private helper: ServicesService) {
     localStorage.setItem('key1','store');
 
     if(localStorage.getItem('language')){
@@ -87,6 +88,7 @@ export class ProfilePage implements OnInit {
     localStorage.setItem('language',this.lang);
     this.translate.use(this.lang);
     this.audio.languageSwitcher(this.lang);
+    this.helper.setLanguage(this.lang);
     this.audio.createLanguageChange();
   }
 }

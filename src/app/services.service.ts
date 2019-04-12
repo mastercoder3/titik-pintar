@@ -4,13 +4,29 @@ import { MathPageModalComponent } from '../app/math-page-modal/math-page-modal.c
 import {ModalWrongAnsComponent} from '../app/modal-wrong-ans/modal-wrong-ans.component';
 import { ModalRightAnsComponent } from './modal-right-ans/modal-right-ans.component';
 import {ModalToasterComponent} from './modal-toaster/modal-toaster.component';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServicesService {
   Mymodal
-  constructor(public modalController: ModalController) { }
+
+  language: BehaviorSubject<string>;
+
+  constructor(public modalController: ModalController) {
+    this.language = new BehaviorSubject<string>(localStorage.getItem('language'));
+   }
+
+   setLanguage(value): void{
+     this.language.next(value)
+   }
+
+   getLanguage(): Observable<string>{
+     return this.language.asObservable();
+   }
+
+
 
   async presentModal() {
     this.Mymodal = await this.modalController.create({
@@ -25,10 +41,10 @@ export class ServicesService {
     this.Mymodal.dismiss()
   }
 
-  async presentModal2(value,val) {
+  async presentModal2(value,val,right) {
     this.Mymodal = await this.modalController.create({
       component: ModalWrongAnsComponent,
-      componentProps: { value: value, length: val },
+      componentProps: { value: value, length: val, right: right},
       cssClass: 'custom-modal2'
     });
     
@@ -36,10 +52,10 @@ export class ServicesService {
     return await this.Mymodal.present();
   }
 
-  async presentModal3(value,val) {
+  async presentModal3(value,val,right) {
     this.Mymodal = await this.modalController.create({
       component: ModalRightAnsComponent,
-      componentProps: { value: value, length: val },
+      componentProps: { value: value, length: val, right: right },
       cssClass: 'custom-modal3',
       showBackdrop: false
     });

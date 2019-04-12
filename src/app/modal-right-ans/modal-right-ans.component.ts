@@ -14,6 +14,7 @@ export class ModalRightAnsComponent implements OnInit {
 
   @Input() value: number;
   @Input() length: number;
+  @Input() right: string;
 
   ngOnInit() {
   }

@@ -42,6 +42,76 @@ export class AudioService {
   
       }, err =>{
       });
+
+      this.nativeAudio.preloadComplex('uniqueId11', 'assets/audio/English.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId12', 'assets/audio/Music-off.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId14', 'assets/audio/Sound-off.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId17', 'assets/audio/Avatars.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId19', 'assets/audio/Gifts.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+
+      this.nativeAudio.preloadComplex('uniqueId21', 'assets/audio/Quiz.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId23', 'assets/audio/Correct.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      
+      this.nativeAudio.preloadComplex('uniqueId25', 'assets/audio/Nope.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId27', 'assets/audio/Exit.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId29', 'assets/audio/Youve-done-it.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      
+      this.nativeAudio.preloadComplex('uniqueId31', 'assets/audio/Time.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
     }
     else{
       this.nativeAudio.preloadComplex('uniqueId6', 'assets/audio/Goodies-ind.mp3', this.reactionVolume, 1, 0)
@@ -76,17 +146,7 @@ export class AudioService {
       }, err =>{
       });
 
-      this.nativeAudio.preloadComplex('uniqueId11', 'assets/audio/English.mp3', this.reactionVolume, 1, 0)
-      .then(res => {
-  
-      }, err =>{
-      });
 
-      this.nativeAudio.preloadComplex('uniqueId12', 'assets/audio/Music-off.mp3', this.reactionVolume, 1, 0)
-      .then(res => {
-  
-      }, err =>{
-      });
 
       this.nativeAudio.preloadComplex('uniqueId13', 'assets/audio/Music-off-ind.mp3', this.reactionVolume, 1, 0)
       .then(res => {
@@ -94,11 +154,6 @@ export class AudioService {
       }, err =>{
       });
 
-      this.nativeAudio.preloadComplex('uniqueId14', 'assets/audio/Sound-off.mp3', this.reactionVolume, 1, 0)
-      .then(res => {
-  
-      }, err =>{
-      });
 
       this.nativeAudio.preloadComplex('uniqueId15', 'assets/audio/Sound-off-ind.mp3', this.reactionVolume, 1, 0)
       .then(res => {
@@ -112,11 +167,6 @@ export class AudioService {
       }, err =>{
       });
 
-      this.nativeAudio.preloadComplex('uniqueId17', 'assets/audio/Avatars.mp3', this.reactionVolume, 1, 0)
-      .then(res => {
-  
-      }, err =>{
-      });
 
       this.nativeAudio.preloadComplex('uniqueId18', 'assets/audio/Gifts-ind.mp3', this.reactionVolume, 1, 0)
       .then(res => {
@@ -124,11 +174,6 @@ export class AudioService {
       }, err =>{
       });
 
-      this.nativeAudio.preloadComplex('uniqueId19', 'assets/audio/Gifts.mp3', this.reactionVolume, 1, 0)
-      .then(res => {
-  
-      }, err =>{
-      });
 
       this.nativeAudio.preloadComplex('uniqueId20', 'assets/audio/Quiz-ind.mp3', this.reactionVolume, 1, 0)
       .then(res => {
@@ -136,11 +181,7 @@ export class AudioService {
       }, err =>{
       });
 
-      this.nativeAudio.preloadComplex('uniqueId21', 'assets/audio/Quiz.mp3', this.reactionVolume, 1, 0)
-      .then(res => {
-  
-      }, err =>{
-      });
+
 
       this.nativeAudio.preloadComplex('uniqueId22', 'assets/audio/Correct-ind.mp3', this.reactionVolume, 1, 0)
       .then(res => {
@@ -148,11 +189,6 @@ export class AudioService {
       }, err =>{
       });
 
-      this.nativeAudio.preloadComplex('uniqueId23', 'assets/audio/Correct.mp3', this.reactionVolume, 1, 0)
-      .then(res => {
-  
-      }, err =>{
-      });
 
       this.nativeAudio.preloadComplex('uniqueId24', 'assets/audio/Nope-ind.mp3', this.reactionVolume, 1, 0)
       .then(res => {
@@ -160,11 +196,6 @@ export class AudioService {
       }, err =>{
       });
 
-      this.nativeAudio.preloadComplex('uniqueId25', 'assets/audio/Nope.mp3', this.reactionVolume, 1, 0)
-      .then(res => {
-  
-      }, err =>{
-      });
 
       this.nativeAudio.preloadComplex('uniqueId26', 'assets/audio/Exit-ind.mp3', this.reactionVolume, 1, 0)
       .then(res => {
@@ -172,11 +203,7 @@ export class AudioService {
       }, err =>{
       });
 
-      this.nativeAudio.preloadComplex('uniqueId27', 'assets/audio/Exit.mp3', this.reactionVolume, 1, 0)
-      .then(res => {
-  
-      }, err =>{
-      });
+
 
       this.nativeAudio.preloadComplex('uniqueId28', 'assets/audio/Youve-done-it-ind.mp3', this.reactionVolume, 1, 0)
       .then(res => {
@@ -184,11 +211,7 @@ export class AudioService {
       }, err =>{
       });
 
-      this.nativeAudio.preloadComplex('uniqueId29', 'assets/audio/Youve-done-it.mp3', this.reactionVolume, 1, 0)
-      .then(res => {
-  
-      }, err =>{
-      });
+
 
       this.nativeAudio.preloadComplex('uniqueId30', 'assets/audio/Time-ind.mp3', this.reactionVolume, 1, 0)
       .then(res => {
@@ -196,11 +219,6 @@ export class AudioService {
       }, err =>{
       });
 
-      this.nativeAudio.preloadComplex('uniqueId31', 'assets/audio/Time.mp3', this.reactionVolume, 1, 0)
-      .then(res => {
-  
-      }, err =>{
-      });
     }
    }
 

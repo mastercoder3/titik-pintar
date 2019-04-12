@@ -6,7 +6,8 @@
         "ans3":5,
         "ans4":1,
         "imageURL":"assets/imgs/Asset2.png",
-        "rightAns": 1
+        "rightAns": 1,
+        "answerStatement":"dalam satu tahun ada 12 bulan. Januari, Februar, Maret, April, Mei, Juni, Juli, Agustus, Septempber, Octubar, November, December."
     },
     {
         "question":"Berapa detik dalam 2 jam ? ",
@@ -15,7 +16,9 @@
         "ans3":1200,
         "ans4":7200,
         "imageURL":"assets/imgs/Picture-question-3.jpg",
-        "rightAns": 3
+        "rightAns": 3,
+        "answerStatement":"Berapa detik dalam 2 jam : 1200"
+
     },
     {
         "question":"Musim hujan berada di bulan? ",
@@ -24,7 +27,9 @@
         "ans3":"Juli",
         "ans4":"Agustus",
         "imageURL":"assets/imgs/Picture-question-4.jpg",
-        "rightAns": 4
+        "rightAns": 4,
+        "answerStatement":"Musim hujan berada di bulan : Agustus"
+
     },
     {
         "question":"Musim kemarau berada di bulan? ",
@@ -33,7 +38,8 @@
         "ans3":"Maret",
         "ans4":"Januari",
         "imageURL":"assets/imgs/Picture-question-5.jpg",
-        "rightAns": 2
+        "rightAns": 2,
+        "answerStatement":"Musim kemarau berada di bulan: Desember"
     }
     
 ]
