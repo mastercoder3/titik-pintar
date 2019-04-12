@@ -84,7 +84,7 @@ export class MathQuestionPagePage implements OnInit {
     else{
       this.isAnswerWrong[val-1] = true;
        this.isWrong = true;
-    this.audio.createWrongAnswer();
+    this.playWorngAudio();
     setTimeout( () => {
       this.helper.presentModal2(this.index,this.questions.length,this.current.answerStatement).then( res =>{
          this.helper.onDismiss().then(res =>{
@@ -108,7 +108,7 @@ export class MathQuestionPagePage implements OnInit {
   }
   checkAnswer1(){
     this.isright = true;
-    this.audio.createCorrectAnswer();
+    this.playCorrectAudio();
     setTimeout( () => {
       let id = Math.floor(Math.random()*4)+1
       this.helper.presentModalToaster(id);
@@ -130,6 +130,33 @@ export class MathQuestionPagePage implements OnInit {
       })
      
       },500);
+  }
+
+
+  playCorrectAudio(){
+    let id = Math.floor(Math.random() * 3) + 1;
+    if(id === 1){
+      this.audio.createCorrectAnswer();
+    }
+    else if(id === 2){
+       this.audio.createBoom();
+    }
+    else if(id === 3){
+      this.audio.createFlawless();
+    }
+  }
+
+  playWorngAudio(){
+    let id = Math.floor(Math.random() * 3) + 1;
+    if(id === 1){
+      this.audio.createWrongAnswer()
+    }
+    else if(id === 2){
+      this.audio.createLetmehelp();
+    }
+    else if(id === 3){
+      this.audio.createSorry();
+    }
   }
 
 

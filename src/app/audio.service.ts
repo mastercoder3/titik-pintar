@@ -112,6 +112,32 @@ export class AudioService {
       }, err =>{
       });
 
+      this.nativeAudio.preloadComplex('uniqueId33', 'assets/audio/Boom.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId35', 'assets/audio/Flawless.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId37', 'assets/audio/Letmehelp.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId39', 'assets/audio/Sorry.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+
+
     }
     else{
       this.nativeAudio.preloadComplex('uniqueId6', 'assets/audio/Goodies-ind.mp3', this.reactionVolume, 1, 0)
@@ -218,6 +244,31 @@ export class AudioService {
   
       }, err =>{
       });
+
+      this.nativeAudio.preloadComplex('uniqueId32', 'assets/audio/Boom-ind.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId34', 'assets/audio/Flawless-ind.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId36', 'assets/audio/Letmehelp-ind.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId38', 'assets/audio/Sorry-ind.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
 
     }
    }
@@ -374,6 +425,30 @@ export class AudioService {
       }
     }
   }
+  createBoom(){
+    if(this.reactionVolume !== 0){
+      if(this.lang === 'ind'){
+        this.nativeAudio.setVolumeForComplexAsset('uniqueId32', this.reactionVolume)
+        this.nativeAudio.play('uniqueId32');
+      }
+      else{
+    this.nativeAudio.setVolumeForComplexAsset('uniqueId33', this.reactionVolume)
+    this.nativeAudio.play('uniqueId33');
+      }
+    }
+  }
+  createFlawless(){
+    if(this.reactionVolume !== 0){
+      if(this.lang === 'ind'){
+        this.nativeAudio.setVolumeForComplexAsset('uniqueId34', this.reactionVolume)
+        this.nativeAudio.play('uniqueId34');
+      }
+      else{
+    this.nativeAudio.setVolumeForComplexAsset('uniqueId35', this.reactionVolume)
+    this.nativeAudio.play('uniqueId35');
+      }
+    }
+  }
   createWrongAnswer(){
     if(this.reactionVolume !== 0){
       if(this.lang === 'ind'){
@@ -383,6 +458,30 @@ export class AudioService {
       else{
     this.nativeAudio.setVolumeForComplexAsset('uniqueId25', this.reactionVolume)
     this.nativeAudio.play('uniqueId25');
+      }
+    }
+  }
+  createLetmehelp(){
+    if(this.reactionVolume !== 0){
+      if(this.lang === 'ind'){
+        this.nativeAudio.setVolumeForComplexAsset('uniqueId36', this.reactionVolume)
+        this.nativeAudio.play('uniqueId36');
+      }
+      else{
+    this.nativeAudio.setVolumeForComplexAsset('uniqueId37', this.reactionVolume)
+    this.nativeAudio.play('uniqueId37');
+      }
+    }
+  }
+  createSorry(){
+    if(this.reactionVolume !== 0){
+      if(this.lang === 'ind'){
+        this.nativeAudio.setVolumeForComplexAsset('uniqueId38', this.reactionVolume)
+        this.nativeAudio.play('uniqueId38');
+      }
+      else{
+    this.nativeAudio.setVolumeForComplexAsset('uniqueId39', this.reactionVolume)
+    this.nativeAudio.play('uniqueId39');
       }
     }
   }
