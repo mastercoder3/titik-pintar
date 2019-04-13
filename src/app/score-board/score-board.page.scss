@@ -94,6 +94,15 @@ margin-left: 10%;
     bottom: 15px;
 }
 
+.score-board-div1{
+    height: 10vh;
+    width: 80%;
+    background-color: #FDFCA8;
+    border:#da4ea7 2px solid;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .score-board-div{
     height: 10vh;
     width: 80%;
@@ -104,6 +113,14 @@ margin-left: 10%;
     margin-right: auto;
 }
 .score-board-div h1{
+    font-family: 'LooseySans';
+    font-size: 4vh;
+    color: #83255f;
+    margin-left: 15%;
+    position: relative;
+    bottom: 12%;
+}
+.score-board-div1 h1{
     font-family: 'LooseySans';
     font-size: 4vh;
     color: #83255f;

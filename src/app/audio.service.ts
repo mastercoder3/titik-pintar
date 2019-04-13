@@ -136,6 +136,12 @@ export class AudioService {
       }, err =>{
       });
 
+      this.nativeAudio.preloadComplex('uniqueId41', 'assets/audio/Maths.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
 
 
     }
@@ -264,6 +270,12 @@ export class AudioService {
       });
 
       this.nativeAudio.preloadComplex('uniqueId38', 'assets/audio/Sorry-ind.mp3', this.reactionVolume, 1, 0)
+      .then(res => {
+  
+      }, err =>{
+      });
+
+      this.nativeAudio.preloadComplex('uniqueId40', 'assets/audio/Maths-ind.mp3', this.reactionVolume, 1, 0)
       .then(res => {
   
       }, err =>{
@@ -518,6 +530,18 @@ export class AudioService {
       else{
     this.nativeAudio.setVolumeForComplexAsset('uniqueId31', this.reactionVolume)
     this.nativeAudio.play('uniqueId31');
+      }
+    }
+  }
+  createMath(){
+    if(this.reactionVolume !== 0){
+      if(this.lang === 'ind'){
+        this.nativeAudio.setVolumeForComplexAsset('uniqueId40', this.reactionVolume)
+        this.nativeAudio.play('uniqueId40');
+      }
+      else{
+    this.nativeAudio.setVolumeForComplexAsset('uniqueId41', this.reactionVolume)
+    this.nativeAudio.play('uniqueId41');
       }
     }
   }

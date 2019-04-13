@@ -1,0 +1,202 @@
+ion-toolbar{
+    --background: #93E022; 
+    height: 100% !important;
+    z-index: -1;
+}
+ion-header{
+    height: 9% !important;
+    background-color: #93E022;
+}
+ion-content{
+    --background: url('../../assets/imgs/BACKGROUND.png') 0 0/100% 100% no-repeat;
+    width:102% !important;
+    background-size: cover !important;
+   background-attachment: fixed !important;
+}
+.bulp-img{
+    height: 7.5vh;
+    width: 6vh;
+    margin-top: -7px;
+}
+.back-img{
+    height: 6vh;
+    width: 5.5vh;
+    margin-top: 2px;
+}
+.dollar-count-div{
+    height: 4vh;
+    width: 10vh;
+    background-color: #7de7df;
+    border: #06bbca 2px solid;
+    border-radius: 5px;
+    margin-left: -5vh;
+    z-index: -1;
+    margin-top: 9px;
+}
+.dollar-img{
+    position: absolute;
+    height: 5vh;
+    width: 5vh;
+    z-index: 2;
+    margin-top: 5px;
+}
+
+.h1{
+    font-family: 'LooseySans';
+font-size: 3.2vh !important;
+color: #feeb03;
+text-align: left;
+font-weight: bolder;
+margin-top: -0.3vh;
+margin-left: 10%;
+   text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+@media (min-width: 375px) and  (max-width: 412px){
+    .h1{
+        font-family: 'LooseySans';
+    font-size: 3.5vh;
+    color: #feeb03;
+    text-align: left;
+    font-weight: bolder;
+    margin-top: -0.3vh;
+    margin-left: 20%;
+       text-shadow:
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
+    }
+}
+
+.h1-2{
+    font-family: 'LooseySans';
+    font-size: 3.5vh;
+    color:white;
+    text-align: center;
+    margin: 40px;
+}
+.searchbar{
+    --background: white;
+    --height: 220px !important;
+    width: 85% !important;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'LooseySans';
+}
+.serach-friend-div{
+    height: 7vh;
+    width: 50%;
+    background-color: #860f7c;
+    border-radius: 10px;
+    border: #d31cc4 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+}
+.h1-3{
+    font-family: 'LooseySans';
+    font-size: 3.5vh;
+    color:white;
+    text-align: center;
+    position: relative;
+    bottom: 20%;
+}
+.number-div{
+    height: 6.5vh;
+    width: 12%;
+    background-color: #860f7c;
+    border: #ce1bbf 2px solid;
+    border-radius: 15px;
+    position: absolute;
+    left: 2%;
+    margin-top: 2.6%;
+}
+.number-div h1{
+    color:white;
+    font-family: 'LooseySans';
+    font-size: 4vh;
+    margin-left: 25%;
+    position: relative;
+    bottom: 15px;
+}
+
+.score-board-div{
+    height: 10vh;
+    width: 80%;
+    background-color: white;
+    border:#da4ea7 2px solid;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.space-suit{
+    height: 45%;
+    width: 7vh;
+    margin-left: 15px;
+}
+
+.h1-4{
+    font-family: 'LooseySans';
+    font-size: 2.5vh !important;
+    color: #83255f; 
+    position: relative;
+    bottom: 15%;
+    margin-left: 6%;
+}
+.h1-5{
+    font-family: 'LooseySans';
+    font-size: 2.5vh !important;
+    color: #83255f; 
+    position: relative;
+    bottom: 32%;
+    margin-left: 6%;
+}
+.h1-6{
+    font-family: 'LooseySans';
+    font-size: 2.5vh !important;
+    color: #83255f; 
+    position: relative;
+    bottom: 50%;
+    margin-left: 6%;
+}
+.invite-div{
+    height: 3.5vh;
+    width: 100%;
+    background-color: #860f7c;
+    border: #da4ea7 2px solid;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.invite-div h1{
+    font-family: 'LooseySans';
+    color: white;
+    font-size: 2.5vh !important;
+   text-align: center;
+   position: relative;
+   bottom: 20px
+}
+.invite-div1{
+    height: 3.5vh;
+    width: 100%;
+    background-color: white;
+    border: #d7d7d7 2px solid;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.invite-div1 h1{
+    font-family: 'LooseySans';
+    color: #860f7c;
+    font-size: 2.5vh !important;
+   text-align: center;
+   position: relative;
+   bottom: 20px
+}
+.bin-img{
+    margin-top: 17px;
+}

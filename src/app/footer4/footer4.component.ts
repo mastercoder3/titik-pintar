@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { NativeAudio } from '@ionic-native/native-audio/ngx';
 import { AudioService } from '../audio.service';
 
 @Component({
-  selector: 'app-footer1',
-  templateUrl: './footer1.component.html',
-  styleUrls: ['./footer1.component.scss'],
+  selector: 'app-footer4',
+  templateUrl: './footer4.component.html',
+  styleUrls: ['./footer4.component.scss'],
 })
-export class Footer1Component implements OnInit {
+export class Footer4Component implements OnInit {
 
   constructor(private router: Router, private audio: AudioService) { }
 
@@ -32,11 +31,8 @@ export class Footer1Component implements OnInit {
     this.audio.createGoodies();
     
   }
-  openRankPage(){
+  openRankpage(){
     this.router.navigate(['score-board']);
-  }
-  openFriendPage(){
-    this.router.navigate(['friend-page']);
   }
  
 }

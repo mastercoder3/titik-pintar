@@ -1,0 +1,130 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col size=2>
+        <img class="back-img" src="assets/imgs/back.png">
+      </ion-col>
+      <ion-col size=2>
+        <img class="dollar-img" src="assets/imgs/dollar.png">
+      </ion-col>
+      <ion-col size=2>
+        <div class="dollar-count-div">
+            <h1 class="h1">1000</h1>
+        </div>
+      </ion-col>
+
+      <ion-col size=2>
+        <img class="dollar-img" src="assets/imgs/star.png">
+      </ion-col>
+      <ion-col size=2>
+        <div class="dollar-count-div">
+            <h1 class="h1">30</h1>
+        </div>
+      </ion-col>
+      <ion-col size=2>
+        <img class="bulp-img" src="assets/imgs/avatar1.png" (click)="ClicktoProfilepage()">
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+<h1 class="h1-2">{{ 'FRIEND PAGE DESCRIPTION' | translate }}</h1>
+</ion-row>
+<ion-row>
+  <ion-searchbar class="searchbar" mode="ios" placeholder=""></ion-searchbar>
+</ion-row>
+<ion-row>
+  <div class="serach-friend-div">
+     <h1 class="h1-3">{{ 'SEARCH FRIENDS' | translate }}</h1>
+  </div>
+</ion-row>
+<h1 class="h1-2">{{ 'MY FRIENDS' | translate }}</h1>
+
+<ion-row style="margin-top:-25px;">
+  <div class="number-div">
+     <h1>1</h1>
+  </div>
+
+  <div class="score-board-div">
+     <ion-row>
+       <ion-col size=2>
+         <img class="space-suit" src="assets/imgs/space-suit.png">
+       </ion-col>
+       <ion-col size=6>
+         <h1 class="h1-4">Ardian</h1>
+         <h1 class="h1-5">{{ 'GRADE' | translate }}</h1>
+         <h1 class="h1-6">{{ 'SCHOOL' | translate }}</h1>
+       </ion-col>
+       <ion-col size=3>
+          <div class="invite-div">
+            <h1>{{ 'INVITE' | translate }}</h1>
+          </div>
+       </ion-col>
+       
+       <ion-col size=1>
+          <img class="bin-img" src="assets/imgs/bin.png">
+       </ion-col>
+     </ion-row>
+  </div>
+</ion-row>
+ <br>
+ <ion-row>
+    <div class="number-div">
+       <h1>2</h1>
+    </div>
+  
+    <div class="score-board-div">
+       <ion-row>
+         <ion-col size=2>
+           <img class="space-suit" src="assets/imgs/score-bear.png">
+         </ion-col>
+         <ion-col size=6>
+           <h1 class="h1-4">Kevin</h1>
+           <h1 class="h1-5">{{ 'GRADE' | translate }}</h1>
+           <h1 class="h1-6">{{ 'SCHOOL' | translate }}</h1>
+         </ion-col>
+         <ion-col size=3>
+            <div class="invite-div1">
+              <h1>{{ 'INVITE' | translate }}</h1>
+            </div>
+         </ion-col>
+         
+         <ion-col size=1>
+            <img class="bin-img" src="assets/imgs/bin.png">
+         </ion-col>
+       </ion-row>
+    </div>
+  </ion-row>
+  <br>
+  <ion-row>
+      <div class="number-div">
+         <h1>3</h1>
+      </div>
+    
+      <div class="score-board-div">
+         <ion-row>
+           <ion-col size=2>
+             <img class="space-suit" src="assets/imgs/score-pirate.png">
+           </ion-col>
+           <ion-col size=6>
+             <h1 class="h1-4">Michael</h1>
+             <h1 class="h1-5">{{ 'GRADE' | translate }}</h1>
+             <h1 class="h1-6">{{ 'SCHOOL' | translate }}</h1>
+           </ion-col>
+           <ion-col size=3>
+              <div class="invite-div1">
+                <h1>{{ 'INVITE' | translate }}</h1>
+              </div>
+           </ion-col>
+           
+           <ion-col size=1>
+              <img class="bin-img" src="assets/imgs/bin.png">
+           </ion-col>
+         </ion-row>
+      </div>
+    </ion-row>
+    <br><br><br><br><br><br><br><br><br><br>
+        <app-footer4 style="position: fixed; bottom: 0px; width: 100%; z-index: 1111111123123;"></app-footer4>
+</ion-content>

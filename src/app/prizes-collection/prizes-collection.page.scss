@@ -1,0 +1,25 @@
+ion-content{
+    --background: url('../../assets/imgs/BACKGROUND.png') 0 0/100% 100% no-repeat;
+    width:102% !important;
+    background-size: cover !important;
+   background-attachment: fixed !important;
+}
+.back-img{
+    margin-top: 20px;
+    margin-left: 15px;
+    height: 6vh;
+    width: 5vh;
+}
+.h1{
+    font-family: 'LooseySans';
+    font-size: 4vh !important;
+    color: white;
+    margin-top: 25px;
+}
+.prize-img{
+    height:25%;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}

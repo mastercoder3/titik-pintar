@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-score-board',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScoreBoardPage implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
-
+clickToPrizeCollectionPage(){
+  this.router.navigate(['prizes-collection']);
+}
 }

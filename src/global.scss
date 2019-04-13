@@ -30,3 +30,10 @@
 //     --color :red;
 //     -webkit-mask-image: url("assets/imgs/avatar1.png")
 // }
+.searchbar-input-container.sc-ion-searchbar-ios{
+    height: 7vh !important;
+}
+.searchbar-search-icon.sc-ion-searchbar-ios{
+    width: 26px;
+    color: #4edced;
+}

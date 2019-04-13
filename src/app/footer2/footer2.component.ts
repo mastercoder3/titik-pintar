@@ -35,4 +35,7 @@ export class Footer2Component implements OnInit {
   openRankPage(){
     this.router.navigate(['score-board']);
   }
+  openFriendPage(){
+    this.router.navigate(['friend-page']);
+  }
 }

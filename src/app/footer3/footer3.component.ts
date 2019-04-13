@@ -32,6 +32,9 @@ export class Footer3Component implements OnInit {
     this.audio.createGoodies();
     
   }
+  openFriendPage(){
+    this.router.navigate(['friend-page']);
+  }
  
 }
 

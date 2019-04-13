@@ -69,6 +69,7 @@ export class HomePage implements OnInit {
     }
 
     ClicktoMathPage() {
+        this.audio.createMath();
         this.router.navigate(['math-page']);
     }
 
