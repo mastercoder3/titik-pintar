@@ -11,7 +11,8 @@ const routes: Routes = [
   { path: 'math-page', loadChildren: './math-page/math-page.module#MathPagePageModule' },
   { path: 'math-question-page', loadChildren: './math-question-page/math-question-page.module#MathQuestionPagePageModule' },
   { path: 'reward-page', loadChildren: './reward-page/reward-page.module#RewardPagePageModule' },
-  { path: 'score-board', loadChildren: './score-board/score-board.module#ScoreBoardPageModule' },  { path: 'friend-page', loadChildren: './friend-page/friend-page.module#FriendPagePageModule' },
+  { path: 'score-board', loadChildren: './score-board/score-board.module#ScoreBoardPageModule' },
+  { path: 'friend-page', loadChildren: './friend-page/friend-page.module#FriendPagePageModule' },
   { path: 'prizes-collection', loadChildren: './prizes-collection/prizes-collection.module#PrizesCollectionPageModule' },
 
 ];

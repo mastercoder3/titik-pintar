@@ -8,11 +8,16 @@ import { Router } from '@angular/router';
 })
 export class ScoreBoardPage implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(
+      private router:Router
+  ) { }
 
   ngOnInit() {
   }
-clickToPrizeCollectionPage(){
-  this.router.navigate(['prizes-collection']);
-}
+  ClicktoProfilepage() {
+    this.router.navigate(['profile']);
+  }
+  clickToPrizeCollectionPage(){
+    this.router.navigate(['prizes-collection']);
+  }
 }

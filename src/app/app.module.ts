@@ -17,6 +17,7 @@ import { MathPageModalComponent } from './math-page-modal/math-page-modal.compon
 import { ModalWrongAnsComponent } from './modal-wrong-ans/modal-wrong-ans.component';
 import { ModalRightAnsComponent } from './modal-right-ans/modal-right-ans.component';
 import { ModalToasterComponent } from './modal-toaster/modal-toaster.component';
+import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -38,6 +39,7 @@ export function createTranslateLoader(http: HttpClient) {
     SplashScreen,
     NativeAudio,
     ToastController,
+    ScreenOrientation,
     AudioService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],

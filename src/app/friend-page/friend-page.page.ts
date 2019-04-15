@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-friend-page',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FriendPagePage implements OnInit {
 
-  constructor() { }
+  constructor(
+      private router:Router
+  ) { }
 
   ngOnInit() {
   }
-
+  ClicktoProfilepage() {
+    this.router.navigate(['profile']);
+  }
 }

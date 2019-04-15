@@ -40,6 +40,9 @@
   "MY FRIENDS":"MY FRIENDS",
   "GRADE":"To Grade 1",
   "SCHOOL":"Heart School",
-  "INVITE":"Invite"
-
+  "INVITE":"Invite",
+  "TOASTER1":"Genius Reward! Answering 5 times right a row",
+  "TOASTER2":"Morning Reward! Answering a question before 6.00 AM",
+  "TOASTER3":"Rainbow Reward! Playing for more than 1 hour",
+  "TOASTER4":"Triple combo Reward! Playing for 3 days in a row"
 }

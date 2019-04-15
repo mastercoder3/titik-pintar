@@ -8,6 +8,7 @@ import {FormsModule} from '@angular/forms';
 import {IonicModule} from '@ionic/angular';
 import {FeatureModule} from '../component.module';
 import {ProfilePage} from '../profile/profile.page';
+import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 
 
 @Component({
@@ -34,6 +35,7 @@ export class HomePage implements OnInit {
         private nativeAudio: NativeAudio,
         private audio: AudioService,
         private router: Router,
+        private screenOrientation: ScreenOrientation,
         public translate: TranslateService) {
 
         if(localStorage.getItem('language')){
@@ -44,7 +46,8 @@ export class HomePage implements OnInit {
     }
 
     ngOnInit() {
-
+        console.log(this.screenOrientation.type);
+        this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT_PRIMARY);
 
         setTimeout(() => {
 

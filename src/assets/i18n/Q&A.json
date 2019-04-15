@@ -1,45 +1,45 @@
 [
     {
-        "question":"Sebutkan musim yang berlaku di Indonesia?  done",
+        "question":"Sebutkan musim yang berlaku di Indonesia?",
         "ans1":2,
         "ans2":4,
         "ans3":5,
         "ans4":1,
         "imageURL":"assets/imgs/Asset2.png",
         "rightAns": 1,
-        "answerStatement":"dalam satu tahun ada 12 bulan. Januari, Februar, Maret, April, Mei, Juni, Juli, Agustus, Septempber, Octubar, November, December."
+        "answerStatement":"In Indonesia there is the dry season and the wet season."
     },
     {
-        "question":"Berapa detik dalam 2 jam ? ",
-        "ans1":3400,
-        "ans2":5000,
-        "ans3":1200,
+        "question":"Berapa detik dalam 1 jam ?",
+        "ans1":1200,
+        "ans2":3600,
+        "ans3":6000,
         "ans4":7200,
         "imageURL":"assets/imgs/Picture-question-3.jpg",
-        "rightAns": 3,
-        "answerStatement":"Berapa detik dalam 2 jam : 1200"
+        "rightAns": 2,
+        "answerStatement":"There are 60 seconds in one minute and 60 minutes in 1 hour. 60x60 = 3600 seconds in one hour."
 
     },
     {
-        "question":"Musim hujan berada di bulan? ",
+        "question":"Musim hujan berada di bulan?",
         "ans1":"Oktober",
         "ans2":"April",
         "ans3":"Juli",
         "ans4":"Agustus",
         "imageURL":"assets/imgs/Picture-question-4.jpg",
-        "rightAns": 4,
-        "answerStatement":"Musim hujan berada di bulan : Agustus"
+        "rightAns": 1,
+        "answerStatement":"The rainy season starts in October"
 
     },
     {
-        "question":"Musim kemarau berada di bulan? ",
+        "question":"Musim kemarau berada di bulan?",
         "ans1":"Juni",
         "ans2":"Desember",
         "ans3":"Maret",
         "ans4":"Januari",
         "imageURL":"assets/imgs/Picture-question-5.jpg",
-        "rightAns": 2,
-        "answerStatement":"Musim kemarau berada di bulan: Desember"
+        "rightAns": 3,
+        "answerStatement":"The rainy season starts in March"
     }
     
 ]
