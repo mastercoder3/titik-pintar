@@ -32,10 +32,10 @@ export class StorePage implements OnInit {
   changeSwitchCase(val){
     this.selector = val;
     if(val==='avatars'){
-     this.audio.createAvatarChange();
+     this.audio.createSound(7);
     }
     else{
-      this.audio.createGiftsChange();
+      this.audio.createSound(8);
     }
   }
 }

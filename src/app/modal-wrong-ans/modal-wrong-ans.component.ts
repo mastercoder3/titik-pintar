@@ -29,6 +29,6 @@ export class ModalWrongAnsComponent implements OnInit {
     const modal = await this.helper.getTop();
     modal.dismiss();
     this.router.navigate(['reward-page']);
-    this.audio.createYouhaveDoneit();
+    this.audio.createSound(13);
   }
 }

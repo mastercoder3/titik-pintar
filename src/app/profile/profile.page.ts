@@ -44,7 +44,7 @@ export class ProfilePage implements OnInit {
     if(this.audioStatus === 'off'){
       this.audio.off();
       localStorage.setItem('vol','off');
-      this.audio.createMusicChange();
+      this.audio.createSound(5);
     }
     else{
       this.audio.on();
@@ -55,9 +55,12 @@ export class ProfilePage implements OnInit {
 
   setVolume(){
     if(this.volume === 'off'){
-      this.audio.createVolumeChange();
-      this.audio.setReactionVolume(0);
-      this.audio.offReactionVolume();
+      this.audio.createSound(6);
+      setTimeout(() =>{
+        this.audio.setReactionVolume(0);
+        this.audio.offReactionVolume();
+      },500) 
+
     }
     else{
       this.audio.setReactionVolume(parseInt(this.volume) / 100);
@@ -89,6 +92,6 @@ export class ProfilePage implements OnInit {
     this.translate.use(this.lang);
     this.audio.languageSwitcher(this.lang);
     this.helper.setLanguage(this.lang);
-    this.audio.createLanguageChange();
+    this.audio.createSound(4);
   }
 }

@@ -61,7 +61,7 @@ export class MathQuestionPagePage implements OnInit {
 
   openModal(){
     this.helper.presentModal();
-    this.audio.createExit();
+    this.audio.createSound(12);
   }
   // async presentToast() {
   //   const toast = await this.toast.create({
@@ -136,26 +136,26 @@ export class MathQuestionPagePage implements OnInit {
   playCorrectAudio(){
     let id = Math.floor(Math.random() * 3) + 1;
     if(id === 1){
-      this.audio.createCorrectAnswer();
+      this.audio.createSound(10);
     }
     else if(id === 2){
-       this.audio.createBoom();
+       this.audio.createSound(15);
     }
     else if(id === 3){
-      this.audio.createFlawless();
+      this.audio.createSound(16);
     }
   }
 
   playWorngAudio(){
     let id = Math.floor(Math.random() * 3) + 1;
     if(id === 1){
-      this.audio.createWrongAnswer()
+      this.audio.createSound(11)
     }
     else if(id === 2){
-      this.audio.createLetmehelp();
+      this.audio.createSound(17);
     }
     else if(id === 3){
-      this.audio.createSorry();
+      this.audio.createSound(18);
     }
   }
 

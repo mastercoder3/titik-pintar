@@ -16,7 +16,7 @@ export class Footer1Component implements OnInit {
   openHomePage(){
     this.router.navigate(['home']);
     
-    this.audio.createLetsGo();
+    this.audio.createSound(1);
   }
   openStorePage(){
     if(localStorage.getItem('key1')==='store-ovo-version'){
@@ -29,7 +29,7 @@ export class Footer1Component implements OnInit {
       this.router.navigate(['store']);
     }
 
-    this.audio.createGoodies();
+    this.audio.createSound(0);
     
   }
   openRankPage(){

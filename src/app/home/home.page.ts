@@ -51,16 +51,16 @@ export class HomePage implements OnInit {
 
         setTimeout(() => {
 
-            this.audio.initializeAudio(localStorage.getItem('language'));
+            this.audio.setLang(localStorage.getItem('language'));
             this.audio.createAudio();
-            this.audio.createYourBack();
+            this.audio.createSound(2, 'start');
         }, 500);
 
 
     }
 
     ClicktoPlay() {
-        this.audio.createNotAvailable();
+        this.audio.createSound(3);
     }
 
     ClicktoProfilepage() {
@@ -72,7 +72,7 @@ export class HomePage implements OnInit {
     }
 
     ClicktoMathPage() {
-        this.audio.createMath();
+        this.audio.createSound(19);
         this.router.navigate(['math-page']);
     }
 
